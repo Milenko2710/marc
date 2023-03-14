@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./dist/main.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+  </head>
+  <body class="bg-white text-white">
+    <div class="w-full px-4 flex justify-between items-center h-16">
+      <div class="flex items-center">
+        <div class="logo">
+          <a href="/">
+            <img src="./src/assets/images/logo.svg" />
+          </a>
+        </div>
+        <nav>
+          <ul class="flex">
+            <li class="relative mx-8">
+              <button id="dropdown">Product</button>
+              <div
+                id="dropdown-menu"
+                class="absolute hidden w-max mt-2 rounded bg-white text-black"
+              >
+                <ul class="flex flex-col divide-y px-4 py-2">
+                  <li class="py-2 flex">
+                    <img
+                      src="./src/assets/images/menu-logo.png"
+                      class="w-5 h-5"
+                    />
+                    <a href="./acm.html" class="pl-3">Access Conflict Monitor (ACM)</a>
+                  </li>
+
+                  <li class="py-2 flex">
+                    <img
+                      src="./src/assets/images/menu-logo2.png"
+                      class="w-5 h-5"
+                    />
+                    <a href="./icm.html" class="pl-3">Internal Control Monitor (ICM)</a>
+                  </li>
+                  <li class="py-2 flex">
+                    <img
+                      src="./src/assets/images/menu-logo3.png"
+                      class="w-5 h-5"
+                    />
+                    <a href="./pam.html" class="pl-3"
+                      >Privilege Acess Management (PAM)</a
+                    >
+                  </li>
+                  <li class="py-2 flex">
+                    <img
+                      src="./src/assets/images/menu-logo4.png"
+                      class="w-5 h-5"
+                    />
+                    <a href="./cam.html" class="pl-3"
+                      >Compliant Access Management (CAM)</a
+                    >
+                  </li>
+                  <li class="py-2 flex">
+                    <img
+                      src="./src/assets/images/menu-logo5.png"
+                      class="w-5 h-5"
+                    />
+                    <a href="./rem.html" class="pl-3">Risk Execution Monitor (REM)</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="mx-8"><a href="./services.html">Services</a></li>
+            <li class="mx-8"><a href="./about-us.html">About us</a></li>
+            <li class="mx-8"><a href="./blog.html">Blog</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="space-x-2">
+        <a
+          href="./contact-us.html"
+          class="bg-transparent border border-primary rounded-full py-3 px-5"
+          >Contact Us</a
+        >
+        <a href="./get-started.html" class="text-white bg-primary rounded-full py-3 px-5"
+          >Get started
+        </a>
+      </div>
+    </div>
+
+    <main>
+      <section class="bg-blackBright flex flex-col justify-center items-center pt-28 mt-[-65px]" style="background-image:url('./src/assets/images/lines.svg')">
+        <h1 class="md:text-4xl text-2xl font-bold">
+          Manage Access Risks and Controls
+        </h1>
+        <p class="text-base mt-5">
+          Reliable Compliance Solutions made Accessible.
+        </p>
+        <a href="./get-started.html" class="text-white bg-primary rounded-full py-3 px-5 mt-5"
+          >Request demo </a
+        >
+        <div class="mt-16 ">
+          <img src="./src/assets/images/group.svg" />
+        </div>
+      </section>
+
+      <section class="bg-brightBlue rounded-t-[50px] py-6 -mt-20 z-10 relative">
+        <div class="container mx-auto md:w-8/12 flex justify-center items-center">
+          <div class="w-[40rem] text-black">
+            <h2 class="font-bold">CERTIFIED S/4HANA INTEGRATION</h2>
+            <p class="pt-2">
+              MARC works with the latest versions of SAP ERP and is SAP
+              certified for integration with S/4HANA for both Studio and
+              Foundation products.
+            </p>
+          </div>
+          <div class="w-1/3 flex justify-end">
+            <img src="./src/assets/images/group1.png" />
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-white text-black py-6">
+        <div class="container mx-auto space-y-8 flex flex-col items-center py-9">
+          <div><img src="./src/assets/images/companies-1.png" /></div>
+          <div><img src="./src/assets/images/companies-2.png" /></div>
+          <p>Trusted by innovative companies worldwide</p>
+          <hr
+            class="h-0.5 w-4/5 mx-auto my-4 border-1 rounded md:my-10 "
+          />
+        </div>
+      </section>
+
+      <section class="flex flex-col justify-center items-center pt-10 bg-white">
+        <div class="container mx-auto text-center md:w-9/12">
+          <h2 class="md:text-4xl text-2xl text-black font-bold">
+            Our Products
+          </h2>
+          <p class="text-base mt-5 text-black">
+            Intelligent SoD reporting and Compliance Management products
+          </p>
+
+          <div class="flex flex-wrap justify-center gap-12 mt-10">
+            <div
+              class="flex flex-col w-1/4 space-y-6 p-6 rounded-lg bg-brightBlue text-left"
+            >
+              <img src="./src/assets/images/menu-logo.png" class="w-12 h-12" />
+              <h2 class="text-black font-bold">ACCESS CONFLICT MONITOR</h2>
+              <p class="text-black">
+                Find and remediate Segregation of Duties (SoD) conflicts and
+                critical access violations. Analyse down to authorization object
+                field level.
+              </p>
+            </div>
+            <div
+              class="flex flex-col w-1/4 space-y-6 p-6 rounded-lg bg-brightBlue text-left"
+            >
+              <img src="./src/assets/images/menu-logo4.png" class="w-12 h-12" />
+              <h2 class="text-black font-bold">COMPLIANT ACCESS MANAGEMENT</h2>
+              <p class="text-black">
+                Provisions user accounts and access roles subject to integrated
+                risk analysis and workflows to facilitate an accelerated
+                approval process.
+              </p>
+            </div>
+            <div
+              class="flex flex-col w-1/4 space-y-6 p-6 rounded-lg bg-brightBlue text-left"
+            >
+              <img src="./src/assets/images/menu-logo2.png" class="w-12 h-12" />
+              <h2 class="text-black font-bold">INTERNAL CONTROL MONITOR</h2>
+              <p class="text-black">
+                Monitors effectiveness of SAP Configuration, Master Data and
+                Transactional key controls and report the discrepancies to
+                business process owners.
+              </p>
+            </div>
+            <div
+              class="flex flex-col w-1/4 space-y-6 p-6 rounded-lg bg-brightBlue text-left"
+            >
+              <img src="./src/assets/images/menu-logo5.png" class="w-12 h-12" />
+              <h2 class="text-black font-bold">ACCESS CONFLICT MONITOR</h2>
+              <p class="text-black">
+                Find and remediate Segregation of Duties (SoD) conflicts and
+                critical access violations. Analyse down to authorization object
+                field level.
+              </p>
+            </div>
+            <div
+              class="flex flex-col w-1/4 space-y-6 p-6 rounded-lg bg-brightBlue text-left"
+            >
+              <img src="./src/assets/images/menu-logo3.png" class="w-12 h-12" />
+              <h2 class="text-black font-bold">COMPLIANT ACCESS MANAGEMENT</h2>
+              <p class="text-black">
+                Provisions user accounts and access roles subject to integrated
+                risk analysis and workflows to facilitate an accelerated
+                approval process.
+              </p>
+            </div>
+            <div
+              class="flex flex-col w-1/4 space-y-6 p-6 rounded-lg bg-brightBlue text-left"
+            >
+              <img src="./src/assets/images/menu-logo6.png" class="w-12 h-12" />
+
+              <h2 class="text-black font-bold">INTERNAL CONTROL MONITOR</h2>
+              <p class="text-black">
+                Monitors effectiveness of SAP Configuration, Master Data and
+                Transactional key controls and report the discrepancies to
+                business process owners.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="flex flex-col justify-center items-center pt-10 bg-white">
+        <div class="container mx-auto text-center">
+          <h2 class="md:text-4xl text-2xl text-black font-bold">
+            Benefits to you
+          </h2>
+          <p class="text-base mt-5 text-black">
+            See below how you benefit from MARS Solutions
+          </p>
+
+          <div class="flex flex-wrap justify-center gap-12 mt-10">
+            <div class="flex flex-col w-1/4 space-y-5 p-6 text-justify">
+              <img src="./src/assets/images/rocket.png" class="w-10 h-10" />
+              <h2 class="text-black font-bold">RAPID</h2>
+              <p class="text-black">
+                Worlds fastest GRC solution deployment at your service. Bid it
+                to end long-traditional GRC solution implementations.
+              </p>
+            </div>
+            <div class="flex flex-col w-1/4 space-y-5 p-6 text-justify">
+              <img src="./src/assets/images/cloud.png" class="w-12 h-10" />
+              <h2 class="text-black font-bold">CLOUD</h2>
+              <p class="text-black">
+                Flexible installation options like cloud based to ease
+                maintenance or also have an option to host it in-house.
+              </p>
+            </div>
+            <div class="flex flex-col w-1/4 space-y-5 p-6 text-justify">
+              <img src="./src/assets/images/fill.png" class="w-10 h-10" />
+              <h2 class="text-black font-bold">REMOTE SECURE ACCESS</h2>
+              <p class="text-black">
+                Secured access to application from anywhere in the world with
+                256 bit encryption in place.
+              </p>
+            </div>
+            <div class="flex flex-col w-1/4 space-y-5 p-6 text-justify">
+              <img src="./src/assets/images/bulb.png" class="w-10 h-10" />
+              <h2 class="text-black font-bold">YOUR IDEAS</h2>
+              <p class="text-black">
+                Submit your ideas for any specific requirements, reporting
+                needs. M.A.R.C. realize it for you.
+              </p>
+            </div>
+            <div class="flex flex-col w-1/4 space-y-5 p-6 text-justify">
+              <img src="./src/assets/images/hammer.png" class="w-10 h-10" />
+              <h2 class="text-black font-bold">SUPPORT & PRODUCT UPDATES</h2>
+              <p class="text-black">
+                Our support team is glad to help and support 24/5. Access our
+                helpdesk portal to log a ticket, know the status, updates, etc.
+              </p>
+            </div>
+            <div class="flex flex-col w-1/4 space-y-5 p-6 text-justify">
+              <img src="./src/assets/images/choose.png" class="w-10 h-10" />
+              <h2 class="text-black font-bold">CHOOSE WHAT YOU NEED</h2>
+              <p class="text-black">
+                Option to install and activate services as per your business
+                needs from MARC application portfolio.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-white">
+        <div class="container mx-auto pt-20 mb-20">
+          <div class="flex flex-row w-10/12 mx-auto justify-between  rounded-lg bg-brightBlue items-center">
+            <div class="justify-between">
+              <div class="ml-10 py-20">
+                <h2 class="md:text-4xl text-2xl text-black font-bold">No risk, no problems!</h2>
+                <p class="text-black mt-4 w-2/3">M.A.R.C. is vision and result of SAP GRC consultants with wide array of project experience focused on Security and Access Controls implementations. 
+              </p>
+              <div class=" flex items-center gap-2">
+                <img class="h-5 w-5" src="./src/assets/images/true.png"/>
+              <p class="text-black mt-4 w-2/3">
+                We know how to manage, control and restrict accesses efficiently
+                and effectively.
+              </p>
+            </div>
+            <div class=" flex items-center gap-2">
+              <img class="h-5 w-5" src="./src/assets/images/true.png"/>
+              <p class="text-black mt-2 w-2/3 text-">
+                M.A.R.C.’s development is an ongoing process, ensuring continual
+                improvement.
+              </p>
+              </div>
+                <div class="mt-8">
+                  <a
+                  href="./get-started.html"
+                  class="text-white bg-primary rounded-full inline-block py-3 px-5 mt-5"
+                  >Request demo
+                </a>
+                </div>
+              </div>
+
+            </div>
+            <div class="mr-10 w-10/12">
+              <img src="./src/assets/images/total-revenue.svg" />
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section
+        class="flex flex-col justify-center sm:flex-row p-6 items-center gap-0"
+      >
+        <div class="sm:w-1/2 p-2 bg-white">
+          <h2 class="md:text-4xl text-2xl text-black font-bold">
+            Who can benefit?
+          </h2>
+          <p class="text-base mt-5 text-black pr-20">
+            M.A.R.C. is vision and result of SAP GRC consultants with wide array
+            of project experience focused on Security and Access Controls
+            implementations.
+          </p>
+          <div id="sap-consulting" class=" text-black mt-5 rounded bg-brightBlue flex w-full p-5 items-center justify-between"><p>SAP CONSULTING SERVICES COMPANIES</p> <img class="h-5 w-5" src="./src/assets/images/arrow.png"/></div>
+          <div id="independent"class="text-black flex w-full rounded p-5 items-center justify-between"><p>INDEPENDENT AUDITORS AND SAP PROFESSIONALAS</p> <img class="h-5 w-5" src="./src/assets/images/arrow.png"/></div>
+          <div id="sap-clients" class=" text-black flex w-full rounded p-5 items-center justify-between"><p>SAP CLIENTS</p> <img class="h-5 w-5" src="./src/assets/images/arrow.png"/></div>
+        </div>
+
+        <div>
+          <div id="sap-consulting-block" class="bg-brightBlue rounded-xl text-black w-[38rem] p-10 ml-[-1rem] flex flex-col gap-6">
+           <div class="flex w-100 mb-4">
+            <img class="h-20 w-20 m-auto" src="./src/assets/images/building.png"/>
+           </div >
+           <p class="py-2">Performing IT services and user administration activities for their SAP clients.
+          </p>
+              <p class="py-2 "><b>CAM:</b>
+               helps in realizing faster and better service response to clienSt user access requests.
+            </p>
+              <p><b>PAM:</b>
+            helps in realizing system support service to the client which is SOD compliant and fully controllable/ auditable by the client.</p>
+            
+          </div>
+          <div>
+            <div id="independent-block" class="hidden bg-brightBlue rounded-xl text-black w-[38rem] p-10 ml-[-1rem] flex-col gap-6">
+            <div class="flex w-100 mb-4">
+              <img class="h-20 w-20 m-auto" src="./src/assets/images/people.png"/>
+            </div>
+            <p class="py-2">Auditing implementation of SAP application and user controls at their SAP clients.
+            </p>
+             <p class="py-2"><b>ACM:</b>
+              helps in effective substantive test of implemented SAP access controls – either in on-line or off-line mode
+           </p>
+             <p class="py-2 "><b>REM:</b>
+              helps in qualifying access risks in terms of actual occurrence of access violations – either in on-line or off-line mode</p>
+              <p><b>ICM:</b>
+                helps in effective substantive test of implemented SAP configuration controls and manual user controls (on-line mode only)</p>
+           
+          </div>
+          <div>
+            <div id="sap-clients-block" class="hidden bg-brightBlue rounded-xl text-black w-[38rem] p-10 ml-[-1rem] flex-col gap-6">
+              <div class="flex w-100 mb-4">
+                <img class="h-20 w-20 m-auto" src="./src/assets/images/head.png"/>
+              </div>
+
+  
+            <p class="py-2">Running SAP in a controlled manner.
+            </p>
+            <p class="py-2"><b>ACM:</b>
+              helps in effective continuous monitoring of implemented SAP access controls and related mitigation controls
+            </p>
+            <p class="py-2 "><b>REM:</b>
+              helps in monitoring actual occurrence of access violations, giving direction to defining risk mitigation controls</p>
+            <p class="py-2"><b>ICM:</b>
+            helps in effective continuous monitoring of implemented SAP configuration controls and manual user controls</p>
+            <p class="py-2"><b>CAM:</b>
+              helps in realizing faster and better follow-up of user access requests</p>
+              <p><b>PAM:</b>
+                helps in performing SOD compliant and fully controllable/ auditable activities by system support staff</p>
+        
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="flex flex-col justify-center itmes-center pt-10 py-4 bg-white"
+      >
+        <div class="container mx-auto text-center">
+          <h2 class="md:text-4xl text-2xl text-black font-bold">Latest news</h2>
+          <p class="text-base mt-5 text-black">
+            Feel our life, read our latest articles
+          </p>
+
+          <div class="flex flex-wrap justify-center gap-12 mt-10">
+            <div
+              class="flex flex-col w-1/4 space-y-6 p-6 rounded-lg bg-brightBlue text-justify"
+            >
+              <img src="./src/assets/images/article1.svg" />
+              <h2 class="text-black font-bold">
+                PREPARING FOR YOUR SEGREGATION OF DUTIES AUDIT
+              </h2>
+              <div>
+                <a href="#" class="text-primary bg-blue rounded py-1 px-3"
+                  >Dec 18, 2021</a
+                >
+              </div>
+
+              <p class="text-black line-clamp-2">
+                Grants temporary broad access for emergency situations to
+                privileged ID’s for support teams in a... read more
+              </p>
+            </div>
+
+            <div
+              class="flex flex-col w-1/4 space-y-6 p-6 rounded-lg bg-brightBlue text-justify"
+            >
+              <img src="./src/assets/images/article2.svg" />
+              <h2 class="text-black font-bold">
+                PREPARING FOR YOUR SEGREGATION OF DUTIES AUDIT
+              </h2>
+              <div>
+                <a href="#" class="text-primary bg-blue rounded py-1 px-3"
+                  >Dec 18, 2021</a
+                >
+              </div>
+              <p class="text-black">
+                Grants temporary broad access for emergency situations to
+                privileged ID’s for support teams in a... read more
+              </p>
+            </div>
+
+            <div
+              class="flex flex-col w-1/4 space-y-6 p-6 rounded-lg bg-brightBlue text-justify"
+            >
+              <img src="./src/assets/images/article3.svg" />
+              <h2 class="text-black font-bold">
+                PREPARING FOR YOUR SEGREGATION OF DUTIES AUDIT
+              </h2>
+              <div>
+                <a href="#" class="text-primary bg-blue rounded py-1 px-3"
+                  >Dec 18, 2021</a
+                >
+              </div>
+              <p class="text-black">
+                Grants temporary broad access for emergency situations to
+                privileged ID’s for support teams in a... read more
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="bg-black mt-20">
+        <div class="container mx-auto py-20 pb-5 px-5 space-y-8 flex flex-col">
+          <div class="flex justify-between">
+            <div class="space-y-8">
+              <a href="#">
+                <img src="./src/assets/images/logo.svg" />
+              </a>
+              <h4 class="text-white">
+                Reliable Compliance Solutions made Accessible
+              </h4>
+              <img src="./src/assets/images/sertified.svg " />
+
+              <ul class="flex space-x-2">
+                <li>
+                  <a href="#">
+                    <img class="w-6 m-auto" src="./src/assets/images/linkedin.png" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#"> <img class="w-6 m-auto" src="./src/assets/images/twitter.png" /></a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="font-bold text-white mb-4">Products</h4>
+              <ul class="space-y-2">
+                <li><a href="#">Access Conflict Monitor</a></li>
+                <li><a href="#">Privilege access management</a></li>
+                <li><a href="#">Compliant access management</a></li>
+                <li><a href="#">Risk execution monitor</a></li>
+                <li><a href="#">Internal control monitor </a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="font-bold text-white mb-4">Services</h4>
+              <ul class="space-y-2">
+                <li><a href="#">M.A.R.C for SAP</a></li>
+                <li><a href="#">M.A.R.C for Non - Sap</a></li>
+                <li>
+                  <a href="#"
+                    >Security and Authorization Scan, Implementation</a
+                  >
+                </li>
+                <li>
+                  <a href="#">Access & Identity Management Support Services</a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="font-bold text-white mb-4">About us</h4>
+              <ul class="space-y-2">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">How can we help?</a></li>
+                <li><a href="#">Services</a></li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <hr
+            class="mx-auto my-4 !mb-5 border-1 rounded md:my-10 border-gray-400 opacity-40  "/>
+          </div>
+
+          <div class="!m-0 p-0 ">
+            <p class="text-white py-2">
+              © Copyright by M.A.R.C. 2023 All rights Reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

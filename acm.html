@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./dist/main.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-blackBright text-white">
+    <div class="mx-4 flex justify-between items-center h-16">
+      <div class="flex items-center">
+        <div class="logo">
+          <a href="/">
+            <img src="./src/assets/images/logo.svg" />
+          </a>
+        </div>
+        <nav>
+          <ul class="flex">
+            <li class="relative mx-8">
+              <button id="dropdown">Product</button>
+              <div
+                id="dropdown-menu"
+                class="absolute hidden w-max mt-2 rounded bg-white text-black"
+              >
+                <ul class="flex flex-col divide-y px-4 py-2">
+                  <li class="py-2 flex">
+                    <img
+                      src="./src/assets/images/menu-logo.png"
+                      class="w-5 h-5"
+                    />
+                    <a href="./acm.html" class="pl-3"
+                      >Access Conflict Monitor (ACM)</a
+                    >
+                  </li>
+                  <li class="py-2 flex">
+                    <img
+                      src="./src/assets/images/menu-logo2.png"
+                      class="w-5 h-5"
+                    />
+                    <a href="./icm.html" class="pl-3"
+                      >Internal Control Monitor (ICM)</a
+                    >
+                  </li>
+                  <li class="py-2 flex">
+                    <img
+                      src="./src/assets/images/menu-logo3.png"
+                      class="w-5 h-5"
+                    />
+                    <a href="./pam.html" class="pl-3"
+                      >Privilege Acess Management (PAM)</a
+                    >
+                  </li>
+                  <li class="py-2 flex">
+                    <img
+                      src="./src/assets/images/menu-logo4.png"
+                      class="w-5 h-5"
+                    />
+                    <a href="./cam.html" class="pl-3"
+                      >Compliant Access Management (CAM)</a
+                    >
+                  </li>
+                  <li class="py-2 flex">
+                    <img
+                      src="./src/assets/images/menu-logo5.png"
+                      class="w-5 h-5"
+                    />
+                    <a href="./rem.html" class="pl-3"
+                      >Risk Execution Monitor (REM)</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="mx-8"><a href="#">Services</a></li>
+            <li class="mx-8"><a href="#">About us</a></li>
+            <li class="mx-8"><a href="#">Blog</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="space-x-2">
+        <a
+          href="#"
+          class="bg-transparent border border-primary rounded-full py-3 px-5"
+          >Contact Us</a
+        >
+        <a href="#" class="text-white bg-primary rounded-full py-3 px-5"
+          >Get started
+        </a>
+      </div>
+    </div>
+
+    <main>
+      <section class="flex flex-col justify-center items-center pt-28">
+        <h1 class="md:text-4xl text-2xl font-bold">Access Conflict Monitor</h1>
+        <p class="text-base mt-5">
+          Access Conflict Monitor: find and remediate Segregation of Duties
+          (SoD) conflicts and critical access violations. Analyse down to
+          authorization object field level.
+        </p>
+      </section>
+
+      <section class="bg-brightBlue rounded-t-[50px] py-6 mt-20">
+        <div class="container mx-auto flex justify-center items-center">
+          <div class="w-[40rem] text-black">
+            <h2 class="font-bold">CERTIFIED S/4HANA INTEGRATION</h2>
+            <p class="pt-2">
+              MARC works with the latest versions of SAP ERP and is SAP
+              certified for integration with S/4HANA for both Studio and
+              Foundation products.
+            </p>
+          </div>
+          <div class="w-1/3 flex justify-end">
+            <img src="./src/assets/images/group1.png" />
+          </div>
+        </div>
+      </section>
+
+      <section class="flex flex-col justify-center items-center pt-10 bg-white">
+        <div class="container mx-auto text-center">
+          <div class="flex flex-wrap justify-center gap-12 mt-10">
+            <div class="flex flex-col w-1/4 space-y-5 p-6 text-justify">
+              <img
+                src="./src/assets/images/analysis-risk.png"
+                class="w-10 h-10"
+              />
+              <h2 class="text-black font-bold">ONLINE RISK ANALYSIS</h2>
+              <p class="text-black">
+                Find and remediate SoD conflicts and critical access violations.
+                Analyse down to the authorization field level.
+              </p>
+            </div>
+            <div class="flex flex-col w-1/4 space-y-5 p-6 text-justify">
+              <img
+                src="./src/assets/images/risk-simulation.png"
+                class="w-12 h-10"
+              />
+              <h2 class="text-black font-bold">ACCESS RISKS SIMULATION</h2>
+              <p class="text-black">
+                Perform risk analysis simulation before applying changes on user
+                authorizations.
+              </p>
+            </div>
+            <div class="flex flex-col w-1/4 space-y-5 p-6 text-justify">
+              <img
+                src="./src/assets/images/cross-analysis.png"
+                class="w-10 h-10"
+              />
+              <h2 class="text-black font-bold">CROSS SYSTEM RISKS ANALYSIS</h2>
+              <p class="text-black">
+                Perform the risk analysis to view the user risks spread across
+                the systems.
+              </p>
+            </div>
+            <div class="flex flex-col w-1/4 space-y-5 p-6 text-justify">
+              <img
+                src="./src/assets/images/org-analysis-risk.png"
+                class="w-10 h-10"
+              />
+              <h2 class="text-black font-bold">ORG LEVEL RISKS ANALYSIS</h2>
+              <p class="text-black">
+                Perform Risk Analysis on Organizational Level.
+              </p>
+            </div>
+            <div class="flex flex-col w-1/4 space-y-5 p-6 text-justify">
+              <img src="./src/assets/images/rule-book.png" class="w-10 h-10" />
+              <h2 class="text-black font-bold">SOD MATRIX, RULE BOOK</h2>
+              <p class="text-black">
+                Master data for ACM are risk defenitions and are input for
+                running risk analysis.
+              </p>
+            </div>
+            <div class="flex flex-col w-1/4 space-y-5 p-6 text-justify">
+              <img
+                src="./src/assets/images/ruleset-converters.png"
+                class="w-10 h-10"
+              />
+              <h2 class="text-black font-bold">RULESET CONVERTERS</h2>
+              <p class="text-black">
+                Use the inbuilt conversion programs to translate third party
+                rule sets in to ACM format.
+              </p>
+            </div>
+            <div class="flex flex-col w-1/4 space-y-5 p-6 text-justify">
+              <img
+                src="./src/assets/images/online-analysis.png"
+                class="w-10 h-10"
+              />
+              <h2 class="text-black font-bold">ONLINE RISK ANALYSIS</h2>
+              <p class="text-black">
+                Find and remediate SoD conflicts and critical access violations.
+                Analyse down to the authorization field level.
+              </p>
+            </div>
+            <div class="flex flex-col w-1/4 space-y-5 p-6 text-justify">
+              <img
+                src="./src/assets/images/sod-simulation.png"
+                class="w-10 h-10"
+              />
+              <h2 class="text-black font-bold">
+                SOD SIMULATION WITH USER MANAGEMNET
+              </h2>
+              <p class="text-black">
+                ACM is integrated with Compliant Access Management (CAM).
+              </p>
+            </div>
+            <div class="flex flex-col w-1/4 space-y-5 p-6 text-justify">
+              <img
+                src="./src/assets/images/mitigation-controls.png"
+                class="w-10 h-10"
+              />
+              <h2 class="text-black font-bold">
+                MITIGATION CONTROLS MONITORING
+              </h2>
+              <p class="text-black">
+                Create mitigation controls when SoD risk can’t be remediated.
+              </p>
+            </div>
+            <div class="flex flex-col w-1/4 space-y-5 p-6 text-justify">
+              <img
+                src="./src/assets/images/role-change.png"
+                class="w-10 h-10"
+              />
+              <h2 class="text-black font-bold">ROLE CHANGE IPACT ANALYSIS</h2>
+              <p class="text-black">
+                Avoid introducing new SoD , critical access conflicts with role
+                updates in production system.
+              </p>
+            </div>
+            <div class="flex flex-col w-1/4 space-y-5 p-6 text-justify">
+              <img
+                src="./src/assets/images/notification.png"
+                class="w-10 h-10"
+              />
+              <h2 class="text-black font-bold">NOTIFICATION</h2>
+              <p class="text-black">
+                Configurable notification templates help to send information to
+                respective risk owners, mitigation owners.
+              </p>
+            </div>
+            <div class="flex flex-col w-1/4 space-y-5 p-6 text-justify">
+              <img src="./src/assets/images/dashboards.png" class="w-10 h-10" />
+              <h2 class="text-black font-bold">DASHBOARDS</h2>
+              <p class="text-black">
+                Management view of dashboards enables quick identification of
+                risk status and helps in decision making.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section>
+      <div class="bg-black">
+        <div class="container mx-auto py-20 px-5 space-y-8 flex flex-col">
+          <div class="flex justify-between">
+            <div class="space-y-8">
+              <a href="#">
+                <img src="./src/assets/images/logo.svg" />
+              </a>
+              <h4 class="text-white">
+                Reliable Compliance Solutions made Accessible
+              </h4>
+              <img src="./src/assets/images/sertified.svg " />
+
+              <ul class="flex space-x-2">
+                <li>
+                  <a href="#">
+                    <img
+                      class="w-6 m-auto"
+                      src="./src/assets/images/linkedin.png"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="w-6 m-auto"
+                      src="./src/assets/images/twitter.png"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="font-bold text-white mb-4">Products</h4>
+              <ul class="space-y-2">
+                <li><a href="#">Access Conflict Monitor</a></li>
+                <li><a href="#">Privilege access management</a></li>
+                <li><a href="#">Compliant access management</a></li>
+                <li><a href="#">Risk execution monitor</a></li>
+                <li><a href="#">Internal control monitor </a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="font-bold text-white mb-4">Services</h4>
+              <ul class="space-y-2">
+                <li><a href="#">M.A.R.C for SAP</a></li>
+                <li><a href="#">M.A.R.C for Non - Sap</a></li>
+                <li>
+                  <a href="#"
+                    >Security and Authorization Scan, Implementation</a
+                  >
+                </li>
+                <li>
+                  <a href="#">Access & Identity Management Support Services</a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="font-bold text-white mb-4">About us</h4>
+              <ul class="space-y-2">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">How can we help?</a></li>
+                <li><a href="#">Services</a></li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <hr
+              class="h-0.5 mx-auto my-4 bg-black border-1 rounded md:my-10 dark:bg-black"
+            />
+          </div>
+
+          <div>
+            <p class="text-white">
+              © Copyright by M.A.R.C. 2022 All rights Reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
