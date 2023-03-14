@@ -21,7 +21,7 @@ sapCon.addEventListener('click', (e) => {
   sapCon.classList.add('bg-brightBlue');
   independent.classList.remove('bg-brightBlue');
 
-  sapConBlock.classList.remove('hidden');
+  sapConBlock.classList.remove('md:hidden');
   sapClientsBlock.classList.add('flex');
   independentBlock.classList.add('hidden');
   sapClientsBlock.classList.add('hidden');
@@ -32,7 +32,7 @@ independent.addEventListener('click', () => {
   sapCon.classList.remove('bg-brightBlue');
   independent.classList.add('bg-brightBlue');
 
-  independentBlock.classList.remove('hidden');
+  independentBlock.classList.remove('md:hidden');
   independentBlock.classList.add('flex');
   sapConBlock.classList.add('hidden');
   sapClientsBlock.classList.add('hidden');
@@ -43,7 +43,7 @@ sapClients.addEventListener('click', () => {
   sapCon.classList.remove('bg-brightBlue');
   independent.classList.remove('bg-brightBlue');
 
-  sapClientsBlock.classList.remove('hidden');
+  sapClientsBlock.classList.remove('md:hidden');
   sapClientsBlock.classList.add('flex');
   sapConBlock.classList.add('hidden');
   independentBlock.classList.add('hidden');
