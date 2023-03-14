@@ -4,131 +4,264 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="./dist/main.css" rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="./dist/main.css" rel="stylesheet" /> 
+ 
 
 </head>
 
-<body class="bg-white text-white">
-  <div class="w-full px-4 flex justify-between items-center h-16">
-    <div class="flex items-center ">
-      <div class="logo">
-        <a href="/">
-          <img src="./src/assets/images/logo.svg" />
-        </a>
-      </div>
-      <nav>
-        <ul class="flex">
-          <li class="relative mx-8">
-            <button id="dropdown">Product</button>
-            <div id="dropdown-menu" class="absolute hidden w-max mt-2 rounded bg-white text-black">
-              <ul class="flex flex-col divide-y px-4 py-2">
-                <li class="py-2 flex">
-                  <img src="./src/assets/images/menu-logo.png" class="w-5 h-5" />
-                  <a href="./acm.html" class="pl-3">Access Conflict Monitor (ACM)</a>
+<body class="text-white">
+  <nav>
+    <div class="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div class="relative flex items-center justify-between h-16">
+        <div class="absolute inset-y-0 right-0 flex items-center md:hidden">
+          <!-- Mobile menu button-->
+          <button type="button" id="menu" class="inline-flex items-center justify-center p-2 text-gray-400 rounded-md hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <!--
+              Icon when menu is closed.
+  
+              Menu open: "hidden", Menu closed: "block"
+            -->
+            <svg class="block w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <!--
+              Icon when menu is open.
+  
+              Menu open: "block", Menu closed: "hidden"
+            -->
+            <svg class="hidden w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex items-center justify-start flex-1 mt-4 sm:items-stretch sm:justify-start">
+          <div class="flex items-center flex-shrink-0">
+            <a href="./index.html"><img class="block w-auto h-8 lg:hidden" src="./src/assets/images/logo.svg" alt="MARC Solutions"></a>
+            <a href="./index.html"><img class="hidden w-auto h-8 lg:block" src="./src/assets/images/logo.svg" alt="MARC Solutions"></a>
+          </div>
+          <div class="hidden sm:ml-6 md:block">
+            <div class="flex space-x-4">
+              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+              <a href="#" id="dropdown" class="block px-3 py-2 text-base font-medium text-white bg-gray-900 rounded-md" aria-current="page">Products</a>
+              <div
+              id="dropdown-menu"
+              class="absolute hidden mt-10 text-black bg-white rounded w-max" style="margin-left: 0;"
+            >
+              <ul class="flex flex-col px-4 py-2 divide-y">
+                <li class="flex py-2">
+                  <img
+                    src="./src/assets/images/menu-logo.png"
+                    class="w-5 h-5"
+                  />
+                  <a href="./acm.html" class="pl-3"
+                    >Access Conflict Monitor (ACM)</a
+                  >
                 </li>
-
-                <li class="py-2 flex">
-                  <img src="./src/assets/images/menu-logo2.png" class="w-5 h-5" />
-                  <a href="./icm.html" class="pl-3">Internal Control Monitor (ICM)</a>
+                <li class="flex py-2">
+                  <img
+                    src="./src/assets/images/menu-logo2.png"
+                    class="w-5 h-5"
+                  />
+                  <a href="./icm.html" class="pl-3"
+                    >Internal Control Monitor (ICM)</a
+                  >
                 </li>
-                <li class="py-2 flex">
-                  <img src="./src/assets/images/menu-logo3.png" class="w-5 h-5" />
-                  <a href="./pam.html" class="pl-3">Privilege Acess Management (PAM)</a>
+                <li class="flex py-2">
+                  <img
+                    src="./src/assets/images/menu-logo3.png"
+                    class="w-5 h-5"
+                  />
+                  <a href="./pam.html" class="pl-3"
+                    >Privilege Acess Management (PAM)</a
+                  >
                 </li>
-                <li class="py-2 flex">
-                  <img src="./src/assets/images/menu-logo4.png" class="w-5 h-5" />
-                  <a href="./cam.html" class="pl-3">Compliant Access Management (CAM)</a>
+                <li class="flex py-2">
+                  <img
+                    src="./src/assets/images/menu-logo4.png"
+                    class="w-5 h-5"
+                  />
+                  <a href="./cam.html" class="pl-3"
+                    >Compliant Access Management (CAM)</a
+                  >
                 </li>
-                <li class="py-2 flex">
-                  <img src="./src/assets/images/menu-logo5.png" class="w-5 h-5" />
-                  <a href="./rem.html" class="pl-3">Risk Execution Monitor (REM)</a>
+                <li class="flex py-2">
+                  <img
+                    src="./src/assets/images/menu-logo5.png"
+                    class="w-5 h-5"
+                  />
+                  <a href="./rem.html" class="pl-3"
+                    >Risk Execution Monitor (REM)</a
+                  >
                 </li>
               </ul>
             </div>
+  
+              <a href="./services.html" class="px-3 py-2 font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white text-md">Services</a>
+  
+              <a href="./about-us.html" class="px-3 py-2 font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white text-md">About Us</a>
+  
+              <a href="./blog.html" class="px-3 py-2 font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white text-md">Blog</a>
+            </div>
+          </div>
+        </div>
+        <div class="absolute right-0 flex items-center hidden md:block inset-y-7">
+          <div class="space-x-2">
+            <a
+              href="./contact-us.html"
+              class="px-4 py-2 font-medium bg-transparent border rounded-full border-primary lg:px-5 lg:py-3 text-md"
+              >Contact Us</a
+            >
+            <a
+              href="./get-started.html"
+              class="px-4 py-2 font-medium text-white rounded-full bg-primary lg:px-5 lg:py-3 text-md"
+              >Get started
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Mobile menu, show/hide based on menu state. -->
+    <div class="hidden md:hidden" id="mobile-menu">
+      <div class="px-2 pt-2 pb-3 space-y-1">
+        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+        <a href="#" id="dropdown1" class="block px-3 py-2 text-base font-medium text-white bg-gray-900 rounded-md" aria-current="page">Products</a>
+        <div
+        id="dropdown-menu1"
+        class="absolute hidden mt-10 text-black bg-white rounded w-max" style="margin-left: 0;"
+      >
+        <ul class="flex flex-col px-4 py-2 divide-y">
+          <li class="flex py-2">
+            <img
+              src="./src/assets/images/menu-logo.png"
+              class="w-5 h-5"
+            />
+            <a href="./acm.html" class="pl-3"
+              >Access Conflict Monitor (ACM)</a
+            >
           </li>
-          <li class="mx-8"><a href="./services.html">Services</a></li>
-          <li class="mx-8"><a href="./about-us.html">About us</a></li>
-          <li class="mx-8"><a href="./blog.html">Blog</a></li>
+          <li class="flex py-2">
+            <img
+              src="./src/assets/images/menu-logo2.png"
+              class="w-5 h-5"
+            />
+            <a href="./icm.html" class="pl-3"
+              >Internal Control Monitor (ICM)</a
+            >
+          </li>
+          <li class="flex py-2">
+            <img
+              src="./src/assets/images/menu-logo3.png"
+              class="w-5 h-5"
+            />
+            <a href="./pam.html" class="pl-3"
+              >Privilege Acess Management (PAM)</a
+            >
+          </li>
+          <li class="flex py-2">
+            <img
+              src="./src/assets/images/menu-logo4.png"
+              class="w-5 h-5"
+            />
+            <a href="./cam.html" class="pl-3"
+              >Compliant Access Management (CAM)</a
+            >
+          </li>
+          <li class="flex py-2">
+            <img
+              src="./src/assets/images/menu-logo5.png"
+              class="w-5 h-5"
+            />
+            <a href="./rem.html" class="pl-3"
+              >Risk Execution Monitor (REM)</a
+            >
+          </li>
         </ul>
-      </nav>
-    </div>
+      </div>
+  
+        <a href="#" class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white">Services</a>
+  
+        <a href="#" class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white">About Us</a>
+  
+        <a href="#" class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white">Blog</a>
 
-    <div class="space-x-2">
-      <a href="./contact-us.html" class="bg-transparent border border-primary rounded-full py-3 px-5">Contact Us</a>
-      <a href="./get-started.html" class="text-white bg-primary rounded-full py-3 px-5">Get started
-      </a>
+        <a href="#" class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white">Contact Us</a>
+
+        <a href="#" class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white">Get started</a>
+
+      </div>
     </div>
-  </div>
+  </nav>
 
   <main>
-    <section class="bg-blackBright flex flex-col justify-center items-center pt-28 mt-[-65px]"
+    <section class="bg-blackBright flex flex-col justify-center items-center pt-36 mt-[-65px]"
       style="background-image:url('./src/assets/images/lines.svg')">
-      <h1 class="md:text-4xl text-3xl font-bold px-14 text-center ">
+      <h1 class="text-3xl font-bold text-center md:text-4xl px-14 ">
         Manage Access Risks and Controls
       </h1>
-      <p class="md:text-base text-xl mt-5 px-10 text-center">
+      <p class="px-10 mt-5 text-xl text-center opacity-100 md:text-xl">
         Reliable Compliance Solutions made Accessible.
       </p>
-      <a href="./get-started.html" class="text-white bg-primary rounded-full py-3 px-5 mt-5">Request demo </a>
+      <a href="./get-started.html" class="px-5 py-3 mt-5 text-white rounded-full bg-primary">Request demo </a>
       <div class="mt-16 ">
         <img src="./src/assets/images/group.svg" />
       </div>
     </section>
 
     <section class="bg-brightBlue md:rounded-t-[50px] rounded-t-[30px] py-6 md:-mt-20 -mt-10 z-10 relative">
-      <div class="container mx-auto md:w-8/12 block md:flex justify-center items-center">
+      <div class="container items-center justify-center block mx-auto md:w-8/12 md:flex">
         <div class="md:w-[40rem] text-black">
           <h2 class="font-bold text-center md:text-left">CERTIFIED S/4HANA INTEGRATION</h2>
-          <p class="pt-2 text-center px-5 md:text-left md:px-0 ">
+          <p class="px-5 pt-2 text-center md:text-left md:px-0 ">
             MARC works with the latest versions of SAP ERP and is SAP
             certified for integration with S/4HANA for both Studio and
             Foundation products.
           </p>
         </div>
-        <div class="w-1/3 md:pt-0 pt-5 md:flex justify-end block text-center md:text-right md:mr-0 mx-auto">
+        <div class="justify-end block w-1/3 pt-5 mx-auto text-center md:pt-0 md:flex md:text-right md:mr-0">
           <img src="./src/assets/images/group1.png" />
         </div>
       </div>
     </section>
 
-    <section class="bg-white text-black py-6">
-      <div class="container mx-auto space-y-8 flex flex-col items-center py-9  ">
-        <div class="flex flex-row space-x-20 mb-10  ">
-          <img src="./src/assets/images/2arc.svg" />
-          <img src="./src/assets/images/fpg.svg" />
-          <img src="./src/assets/images/greenery.svg" />
-          <img src="./src/assets/images/st-engineering.svg" />
-          <img src="./src/assets/images/asito.svg" />
+    <section class="py-6 text-black bg-white">
+      <div class="container flex flex-col items-center w-9/12 mx-auto space-y-8 py-9">
+        <div class="flex flex-col w-full mx-auto mb-10 space-x-20 md:flex-row">
+          <img src="./src/assets/images/2arc.svg" class="w-1/5"/>
+          <img src="./src/assets/images/fpg.svg" class="w-1/5"/>
+          <img src="./src/assets/images/greenery.svg" class="w-1/5"/>
+          <img src="./src/assets/images/st-engineering.svg" class="w-1/5"/>
+          <img src="./src/assets/images/asito.svg"class="w-1/5" />
         </div>
-        <div class="flex flex-row space-x-20">
-          <img src="./src/assets/images/senoko.svg" />
-          <img src="./src/assets/images/xscontrol.svg" />
-          <img src="./src/assets/images/bavaria.svg" />
-          <img src="./src/assets/images/superp.svg" />
-          <img src="./src/assets/images/mediq.svg" />
+        <div class="flex flex-row w-full mx-auto space-x-20">
+          <img src="./src/assets/images/senoko.svg" class="w-1/5"/>
+          <img src="./src/assets/images/xscontrol.svg" class="w-1/5"/>
+          <img src="./src/assets/images/bavaria.svg" class="w-1/5"/>
+          <img src="./src/assets/images/superp.svg" class="w-1/5"/>
+          <img src="./src/assets/images/mediq.svg" class="w-1/5"/>
         </div>
       </div>
 
       <p class="text-center">Trusted by innovative companies worldwide</p>
-      <hr class="h-0.5 w-4/5 mx-auto my-4 border-1 rounded md:my-10 " />
+      <hr class="h-0.5 w-4/5 mx-auto my-4 border-1 rounded md:my-10 opacity-20" />
       </div>
     </section>
 
-    <section class="flex flex-col justify-center items-center md:pt-10 pt-0 bg-white">
+    <section class="flex flex-col items-center justify-center pt-0 bg-white md:pt-10">
       <div class="container mx-auto text-center md:w-9/12">
-        <h2 class="md:text-4xl text-2xl text-black font-bold">
+        <h2 class="text-2xl font-bold text-black md:text-4xl">
           Our Products
         </h2>
-        <p class="text-base mt-5 text-black">
+        <p class="mt-5 text-base text-center text-black">
           Intelligent SoD reporting and Compliance Management products
         </p>
 
-        <div class="flex flex-wrap justify-center gap-12 mt-10 md:flex-row flex-col">
+        <div class="flex flex-col flex-wrap justify-center gap-12 mt-10 md:flex-row">
           <div
-            class="flex flex-col md:w-1/4 w-full space-y-6 p-6 rounded-lg bg-brightBlue md:text-left text-center mx-4 md:mx-0">
-            <img src="./src/assets/images/menu-logo.png" class="w-12 h-12 md:ml-0 mx-auto" />
-            <h2 class="text-black font-bold">ACCESS CONFLICT MONITOR</h2>
+            class="flex flex-col w-full p-6 mx-4 space-y-6 text-center rounded-lg md:w-1/4 bg-brightBlue md:text-left md:mx-0">
+            <img src="./src/assets/images/menu-logo.png" class="w-12 h-12 mx-auto md:ml-0" />
+            <h2 class="font-bold text-black">ACCESS CONFLICT MONITOR</h2>
             <p class="text-black">
               Find and remediate Segregation of Duties (SoD) conflicts and
               critical access violations. Analyse down to authorization object
@@ -136,9 +269,9 @@
             </p>
           </div>
           <div
-            class="flex flex-col md:w-1/4 w-full space-y-6 p-6 rounded-lg bg-brightBlue md:text-left text-center mx-4 md:mx-0">
-            <img src="./src/assets/images/menu-logo4.png" class="w-12 h-12 md:ml-0 mx-auto" />
-            <h2 class="text-black font-bold">COMPLIANT ACCESS MANAGEMENT</h2>
+            class="flex flex-col w-full p-6 mx-4 space-y-6 text-center rounded-lg md:w-1/4 bg-brightBlue md:text-left md:mx-0">
+            <img src="./src/assets/images/menu-logo4.png" class="w-12 h-12 mx-auto md:ml-0" />
+            <h2 class="font-bold text-black">COMPLIANT ACCESS MANAGEMENT</h2>
             <p class="text-black">
               Provisions user accounts and access roles subject to integrated
               risk analysis and workflows to facilitate an accelerated
@@ -146,9 +279,9 @@
             </p>
           </div>
           <div
-            class="flex flex-col md:w-1/4 w-full space-y-6 p-6 rounded-lg bg-brightBlue md:text-left text-center mx-4 md:mx-0">
-            <img src="./src/assets/images/menu-logo2.png" class="w-12 h-12 md:ml-0 mx-auto" />
-            <h2 class="text-black font-bold">INTERNAL CONTROL MONITOR</h2>
+            class="flex flex-col w-full p-6 mx-4 space-y-6 text-center rounded-lg md:w-1/4 bg-brightBlue md:text-left md:mx-0">
+            <img src="./src/assets/images/menu-logo2.png" class="w-12 h-12 mx-auto md:ml-0" />
+            <h2 class="font-bold text-black">INTERNAL CONTROL MONITOR</h2>
             <p class="text-black">
               Monitors effectiveness of SAP Configuration, Master Data and
               Transactional key controls and report the discrepancies to
@@ -156,9 +289,9 @@
             </p>
           </div>
           <div
-            class="flex flex-col md:w-1/4 w-full space-y-6 p-6 rounded-lg bg-brightBlue md:text-left text-center mx-4 md:mx-0">
-            <img src="./src/assets/images/menu-logo5.png" class="w-12 h-12 md:ml-0 mx-auto" />
-            <h2 class="text-black font-bold">ACCESS CONFLICT MONITOR</h2>
+            class="flex flex-col w-full p-6 mx-4 space-y-6 text-center rounded-lg md:w-1/4 bg-brightBlue md:text-left md:mx-0">
+            <img src="./src/assets/images/menu-logo5.png" class="w-12 h-12 mx-auto md:ml-0" />
+            <h2 class="font-bold text-black">ACCESS CONFLICT MONITOR</h2>
             <p class="text-black">
               Find and remediate Segregation of Duties (SoD) conflicts and
               critical access violations. Analyse down to authorization object
@@ -166,9 +299,9 @@
             </p>
           </div>
           <div
-            class="flex flex-col md:w-1/4 w-full space-y-6 p-6 rounded-lg bg-brightBlue md:text-left text-center mx-4 md:mx-0">
-            <img src="./src/assets/images/menu-logo3.png" class="w-12 h-12 md:ml-0 mx-auto" />
-            <h2 class="text-black font-bold">COMPLIANT ACCESS MANAGEMENT</h2>
+            class="flex flex-col w-full p-6 mx-4 space-y-6 text-center rounded-lg md:w-1/4 bg-brightBlue md:text-left md:mx-0">
+            <img src="./src/assets/images/menu-logo3.png" class="w-12 h-12 mx-auto md:ml-0" />
+            <h2 class="font-bold text-black">COMPLIANT ACCESS MANAGEMENT</h2>
             <p class="text-black">
               Provisions user accounts and access roles subject to integrated
               risk analysis and workflows to facilitate an accelerated
@@ -176,10 +309,10 @@
             </p>
           </div>
           <div
-            class="flex flex-col md:w-1/4 w-full space-y-6 p-6 rounded-lg bg-brightBlue md:text-left text-center mx-4 md:mx-0">
-            <img src="./src/assets/images/menu-logo6.png" class="w-12 h-12 md:ml-0 mx-auto" />
+            class="flex flex-col w-full p-6 mx-4 space-y-6 text-center rounded-lg md:w-1/4 bg-brightBlue md:text-left md:mx-0">
+            <img src="./src/assets/images/menu-logo6.png" class="w-12 h-12 mx-auto md:ml-0" />
 
-            <h2 class="text-black font-bold">INTERNAL CONTROL MONITOR</h2>
+            <h2 class="font-bold text-black">INTERNAL CONTROL MONITOR</h2>
             <p class="text-black">
               Monitors effectiveness of SAP Configuration, Master Data and
               Transactional key controls and report the discrepancies to
@@ -190,59 +323,59 @@
       </div>
     </section>
 
-    <section class="flex flex-col justify-center items-center pt-10 bg-white">
+    <section class="flex flex-col items-center justify-center pt-10 bg-white">
       <div class="container mx-auto text-center">
-        <h2 class="md:text-4xl text-2xl text-black font-bold">
+        <h2 class="text-2xl font-bold text-black md:text-4xl">
           Benefits to you
         </h2>
-        <p class="text-base mt-5 text-black">
+        <p class="mt-5 text-base text-center text-black">
           See below how you benefit from MARS Solutions
         </p>
 
-        <div class="md:flex-row flex flex-col flex-wrap justify-center gap-12 mt-10">
-          <div class="flex flex-col md:w-1/4 w-full space-y-5 p-6 md:text-left  text-center mx-4 md:mx-0 ">
-            <img src="./src/assets/images/rocket.png" class="w-10 h-10 md:ml-0 mx-auto" />
-            <h2 class="text-black font-bold">RAPID</h2>
+        <div class="flex flex-col flex-wrap justify-center gap-12 mt-10 md:flex-row">
+          <div class="flex flex-col w-full p-6 mx-4 space-y-5 text-center md:w-1/4 md:text-left md:mx-0 ">
+            <img src="./src/assets/images/rapid.svg" class="w-10 h-10 mx-auto md:ml-0" />
+            <h2 class="font-bold text-black">RAPID</h2>
             <p class="text-black">
               Worlds fastest GRC solution deployment at your service. Bid it
               to end long-traditional GRC solution implementations.
             </p>
           </div>
-          <div class="flex flex-col md:w-1/4 w-full space-y-5 p-6 md:text-left  text-center mx-4 md:mx-0 ">
-            <img src="./src/assets/images/cloud.png" class="w-12 h-10 md:ml-0 mx-auto" />
-            <h2 class="text-black font-bold">CLOUD</h2>
+          <div class="flex flex-col w-full p-6 mx-4 space-y-5 text-center md:w-1/4 md:text-left md:mx-0 ">
+            <img src="./src/assets/images/cloud.svg" class="w-12 h-10 mx-auto md:ml-0" />
+            <h2 class="font-bold text-black">CLOUD</h2>
             <p class="text-black">
               Flexible installation options like cloud based to ease
               maintenance or also have an option to host it in-house.
             </p>
           </div>
-          <div class="flex flex-col md:w-1/4 w-full space-y-5 p-6 md:text-left  text-center mx-4 md:mx-0 ">
-            <img src="./src/assets/images/fill.png" class="w-10 h-10 md:ml-0 mx-auto" />
-            <h2 class="text-black font-bold">REMOTE SECURE ACCESS</h2>
+          <div class="flex flex-col w-full p-6 mx-4 space-y-5 text-center md:w-1/4 md:text-left md:mx-0 ">
+            <img src="./src/assets/images/remote.svg" class="w-10 h-10 mx-auto md:ml-0" />
+            <h2 class="font-bold text-black">REMOTE SECURE ACCESS</h2>
             <p class="text-black">
               Secured access to application from anywhere in the world with
               256 bit encryption in place.
             </p>
           </div>
-          <div class="flex flex-col md:w-1/4 w-full space-y-5 p-6 md:text-left  text-center mx-4 md:mx-0 ">
-            <img src="./src/assets/images/bulb.png" class="w-10 h-10 md:ml-0 mx-auto" />
-            <h2 class="text-black font-bold">YOUR IDEAS</h2>
+          <div class="flex flex-col w-full p-6 mx-4 space-y-5 text-center md:w-1/4 md:text-left md:mx-0 ">
+            <img src="./src/assets/images/ideas.svg" class="w-10 h-10 mx-auto md:ml-0" />
+            <h2 class="font-bold text-black">YOUR IDEAS</h2>
             <p class="text-black">
               Submit your ideas for any specific requirements, reporting
               needs. M.A.R.C. realize it for you.
             </p>
           </div>
-          <div class="flex flex-col md:w-1/4 w-full space-y-5 p-6 md:text-left  text-center mx-4 md:mx-0 ">
-            <img src="./src/assets/images/hammer.png" class="w-10 h-10 md:ml-0 mx-auto" />
-            <h2 class="text-black font-bold">SUPPORT & PRODUCT UPDATES</h2>
+          <div class="flex flex-col w-full p-6 mx-4 space-y-5 text-center md:w-1/4 md:text-left md:mx-0 ">
+            <img src="./src/assets/images/support.svg" class="w-10 h-10 mx-auto md:ml-0" />
+            <h2 class="font-bold text-black">SUPPORT & PRODUCT UPDATES</h2>
             <p class="text-black">
               Our support team is glad to help and support 24/5. Access our
               helpdesk portal to log a ticket, know the status, updates, etc.
             </p>
           </div>
-          <div class="flex flex-col md:w-1/4 w-full space-y-5 p-6 md:text-left  text-center mx-4 md:mx-0 ">
-            <img src="./src/assets/images/choose.png" class="w-10 h-10 md:ml-0 mx-auto" />
-            <h2 class="text-black font-bold">CHOOSE WHAT YOU NEED</h2>
+          <div class="flex flex-col w-full p-6 mx-4 space-y-5 text-center md:w-1/4 md:text-left md:mx-0 ">
+            <img src="./src/assets/images/need.svg" class="w-10 h-10 mx-auto md:ml-0" />
+            <h2 class="font-bold text-black">CHOOSE WHAT YOU NEED</h2>
             <p class="text-black">
               Option to install and activate services as per your business
               needs from MARC application portfolio.
@@ -253,37 +386,37 @@
     </section>
 
     <section class="bg-white">
-      <div class="container mx-auto pt-20 mb-20">
-        <div class="flex md:flex-row flex-col w-10/12 mx-auto justify-between  rounded-lg bg-brightBlue items-center">
+      <div class="container pt-20 mx-auto mb-20">
+        <div class="flex flex-col items-center justify-between w-10/12 mx-auto rounded-lg md:flex-row bg-brightBlue">
           <div class="justify-between">
-            <div class="md:ml-10  px-5 md:px-0 py-20">
-              <h2 class="md:text-4xl text-2xl text-black font-bold">No risk, no problems!</h2>
-              <p class="text-black mt-4 md:w-2/3 w-full ">M.A.R.C. is vision and result of SAP GRC consultants with wide
+            <div class="px-5 py-20 md:ml-10 md:px-0">
+              <h2 class="text-2xl font-bold text-black md:text-4xl">No risk, no problems!</h2>
+              <p class="w-full mt-4 text-black md:w-2/3 ">M.A.R.C. is vision and result of SAP GRC consultants with wide
                 array of project experience focused on Security and Access Controls implementations.
               </p>
-              <div class=" flex items-center gap-2">
-                <img class="h-5 w-5" src="./src/assets/images/true.png" />
-                <p class="text-black mt-4 w-2/3">
+              <div class="flex items-center gap-2 ">
+                <img class="w-5 h-5" src="./src/assets/images/true.png" />
+                <p class="w-2/3 mt-4 text-black">
                   We know how to manage, control and restrict accesses efficiently
                   and effectively.
                 </p>
               </div>
-              <div class=" flex items-center gap-2">
-                <img class="h-5 w-5" src="./src/assets/images/true.png" />
-                <p class="text-black mt-2 w-2/3 text-">
+              <div class="flex items-center gap-2 ">
+                <img class="w-5 h-5" src="./src/assets/images/true.png" />
+                <p class="w-2/3 mt-2 text-black text-">
                   M.A.R.C.’s development is an ongoing process, ensuring continual
                   improvement.
                 </p>
               </div>
               <div class="mt-8">
                 <a href="./get-started.html"
-                  class="text-white bg-primary rounded-full inline-block py-3 px-5 mt-5">Request demo
+                  class="inline-block px-5 py-3 mt-5 text-white rounded-full bg-primary">Request demo
                 </a>
               </div>
             </div>
 
           </div>
-          <div class="md:mr-10 w-10/12">
+          <div class="w-10/12 md:mr-10">
             <img src="./src/assets/images/total-revenue.svg" />
           </div>
 
@@ -292,33 +425,33 @@
       </div>
     </section>
 
-    <section class="flex flex-col justify-center sm:flex-row p-6 items-center gap-0">
-      <div class="sm:w-1/2 p-2 bg-white">
-        <h2 class="md:text-4xl text-2xl text-black font-bold text-center">
+    <section class="flex flex-col items-center justify-center gap-0 p-6 sm:flex-row">
+      <div class="p-2 bg-white sm:w-1/2">
+        <h2 class="text-2xl font-bold text-left text-black md:text-4xl">
           Who can benefit?
         </h2>
-        <p class="text-base mt-5 mb-5 text-black md:pr-20 text-center ">
+        <p class="mt-5 mb-5 text-base text-left text-black md:pr-20 ">
           M.A.R.C. is vision and result of SAP GRC consultants with wide array
           of project experience focused on Security and Access Controls
           implementations.
         </p>
         <div id="sap-consulting"
-          class=" text-black mt-5 rounded bg-brightBlue md:flex hidden w-full p-5 items-center justify-between">
-          <p>SAP CONSULTING SERVICES COMPANIES</p> <img class="h-5 w-5" src="./src/assets/images/arrow.png" />
+          class="items-center justify-between hidden w-full p-5 mt-5 text-black rounded bg-brightBlue md:flex">
+          <p>SAP CONSULTING SERVICES COMPANIES</p> <img class="w-5 h-5" src="./src/assets/images/arrow.png" />
         </div>
-        <div id="independent" class="text-black md:flex hidden w-full rounded p-5 items-center justify-between">
-          <p>INDEPENDENT AUDITORS AND SAP PROFESSIONALAS</p> <img class="h-5 w-5" src="./src/assets/images/arrow.png" />
+        <div id="independent" class="items-center justify-between hidden w-full p-5 text-black rounded md:flex">
+          <p>INDEPENDENT AUDITORS AND SAP PROFESSIONALAS</p> <img class="w-5 h-5" src="./src/assets/images/arrow.png" />
         </div>
-        <div id="sap-clients" class=" text-black md:flex  hidden w-full rounded p-5 items-center justify-between">
-          <p>SAP CLIENTS</p> <img class="h-5 w-5" src="./src/assets/images/arrow.png" />
+        <div id="sap-clients" class="items-center justify-between hidden w-full p-5 text-black rounded md:flex">
+          <p>SAP CLIENTS</p> <img class="w-5 h-5" src="./src/assets/images/arrow.png" />
         </div>
       </div>
 
       <div>
         <div id="sap-consulting-block"
           class="bg-brightBlue rounded-xl text-black md:w-[38rem] w-full p-10 md:ml-[-1rem] flex flex-col gap-6 mb-4">
-          <div class="flex w-100 mb-4">
-            <img class="h-20 w-20 m-auto" src="./src/assets/images/building.png" />
+          <div class="flex mb-4 w-100">
+            <img class="w-20 h-20 m-auto" src="./src/assets/images/building.png" />
           </div>
           <p class="py-2">Performing IT services and user administration activities for their SAP clients.
           </p>
@@ -332,8 +465,8 @@
         </div>
         <div id="independent-block"
           class="md:hidden flex bg-brightBlue rounded-xl text-black md:w-[38rem] w-full p-10 md:ml-[-1rem] flex-col gap-6 mb-4">
-          <div class="flex w-100 mb-4">
-            <img class="h-20 w-20 m-auto" src="./src/assets/images/people.png" />
+          <div class="flex mb-4 w-100">
+            <img class="w-20 h-20 m-auto" src="./src/assets/images/people.png" />
           </div>
           <p class="py-2">Auditing implementation of SAP application and user controls at their SAP clients.
           </p>
@@ -350,8 +483,8 @@
 
         <div id="sap-clients-block"
           class="md:hidden flex bg-brightBlue rounded-xl text-black md:w-[38rem] w-full p-10 md:ml-[-1rem] flex-col gap-6 mb-4">
-          <div class="flex w-100 mb-4 ">
-            <img class="h-20 w-20 m-auto" src="./src/assets/images/head.png" />
+          <div class="flex mb-4 w-100 ">
+            <img class="w-20 h-20 m-auto" src="./src/assets/images/head.png" />
           </div>
 
 
@@ -375,21 +508,21 @@
       </div>
     </section>
 
-    <section class="flex flex-col justify-center itmes-center pt-10 py-4 bg-white px-5 md:px-0">
+    <section class="flex flex-col justify-center px-5 py-4 pt-10 bg-white itmes-center md:px-0">
       <div class="container mx-auto text-center">
-        <h2 class="md:text-4xl text-2xl text-black font-bold">Latest news</h2>
-        <p class="text-base mt-5 text-black">
+        <h2 class="text-2xl font-bold text-black md:text-4xl">Latest news</h2>
+        <p class="mt-5 text-base text-center text-black">
           Feel our life, read our latest articles
         </p>
 
-        <div class="flex flex-wrap md:flex-row flex-col justify-center gap-12 mt-10">
-          <div class="flex flex-col md:w-1/4 w-full space-y-6 p-6 rounded-lg bg-brightBlue text-left">
+        <div class="flex flex-col flex-wrap justify-center gap-12 mt-10 md:flex-row">
+          <div class="flex flex-col w-full p-6 space-y-6 text-left rounded-lg md:w-1/4 bg-brightBlue">
             <img src="./src/assets/images/article1.svg" />
-            <h2 class="text-black font-bold">
+            <h2 class="font-bold text-black">
               PREPARING FOR YOUR SEGREGATION OF DUTIES AUDIT
             </h2>
             <div>
-              <a href="#" class="text-primary bg-blue rounded py-1 px-3">Dec 18, 2021</a>
+              <a href="#" class="px-3 py-1 rounded text-primary bg-blue">Dec 18, 2021</a>
             </div>
 
             <p class="text-black line-clamp-2">
@@ -398,13 +531,13 @@
             </p>
           </div>
 
-          <div class="flex flex-col md:w-1/4 w-full space-y-6 p-6 rounded-lg bg-brightBlue text-left">
+          <div class="flex flex-col w-full p-6 space-y-6 text-left rounded-lg md:w-1/4 bg-brightBlue">
             <img src="./src/assets/images/article2.svg" />
-            <h2 class="text-black font-bold">
+            <h2 class="font-bold text-black">
               PREPARING FOR YOUR SEGREGATION OF DUTIES AUDIT
             </h2>
             <div>
-              <a href="#" class="text-primary bg-blue rounded py-1 px-3">Dec 18, 2021</a>
+              <a href="#" class="px-3 py-1 rounded text-primary bg-blue">Dec 18, 2021</a>
             </div>
             <p class="text-black">
               Grants temporary broad access for emergency situations to
@@ -412,13 +545,13 @@
             </p>
           </div>
 
-          <div class="flex flex-col md:w-1/4 w-full space-y-6 p-6 rounded-lg bg-brightBlue text-left">
+          <div class="flex flex-col w-full p-6 space-y-6 text-left rounded-lg md:w-1/4 bg-brightBlue">
             <img src="./src/assets/images/article3.svg" />
-            <h2 class="text-black font-bold">
+            <h2 class="font-bold text-black">
               PREPARING FOR YOUR SEGREGATION OF DUTIES AUDIT
             </h2>
             <div>
-              <a href="#" class="text-primary bg-blue rounded py-1 px-3">Dec 18, 2021</a>
+              <a href="#" class="px-3 py-1 rounded text-primary bg-blue">Dec 18, 2021</a>
             </div>
             <p class="text-black">
               Grants temporary broad access for emergency situations to
@@ -430,10 +563,10 @@
     </section>
   </main>
 
-  <footer>
-    <div class="bg-black mt-20">
-      <div class="container mx-auto py-20 pb-5 px-5 space-y-8 flex flex-col">
-        <div class="flex md:flex-row flex-col-reverse justify-between">
+  <footer class="mt-20 bg-blackBright">
+    <div class="">
+      <div class="container flex flex-col px-5 py-20 pb-5 mx-auto space-y-8">
+        <div class="flex flex-col-reverse justify-between md:flex-row">
           <div class="space-y-8 text-center md:text-left">
             <a href="#">
               <img src="./src/assets/images/logo.svg" class="mx-auto md:ml-0" />
@@ -443,20 +576,20 @@
             </h4>
             <img src="./src/assets/images/sertified.svg " class="mx-auto md:ml-0" />
 
-            <ul class="flex space-x-2 justify-center md:justify-start">
+            <ul class="flex justify-center space-x-2 md:justify-start">
               <li>
                 <a href="#">
-                  <img class="w-6 m-auto" src="./src/assets/images/linkedin.png" />
+                  <img class="w-6 m-auto" src="./src/assets/images/ln.svg" />
                 </a>
               </li>
               <li>
-                <a href="#"> <img class="w-6 m-auto" src="./src/assets/images/twitter.png" /></a>
+                <a href="#"> <img class="w-6 m-auto" src="./src/assets/images/twitter1.svg" /></a>
               </li>
             </ul>
           </div>
 
-          <div class="md:mb-0 mb-8">
-            <h4 class="font-bold text-white mb-4">Products</h4>
+          <div class="mb-8 md:mb-0">
+            <h4 class="mb-4 font-bold text-white">Products</h4>
             <ul class="space-y-2">
               <li><a href="#">Access Conflict Monitor</a></li>
               <li><a href="#">Privilege access management</a></li>
@@ -466,8 +599,8 @@
             </ul>
           </div>
 
-          <div class="md:mb-0 mb-8">
-            <h4 class="font-bold text-white mb-4">Services</h4>
+          <div class="mb-8 md:mb-0">
+            <h4 class="mb-4 font-bold text-white">Services</h4>
             <ul class="space-y-2">
               <li><a href="#">M.A.R.C for SAP</a></li>
               <li><a href="#">M.A.R.C for Non - Sap</a></li>
@@ -480,8 +613,8 @@
             </ul>
           </div>
 
-          <div class="md:mb-0 mb-8">
-            <h4 class="font-bold text-white mb-4">About us</h4>
+          <div class="mb-8 md:mb-0">
+            <h4 class="mb-4 font-bold text-white">About us</h4>
             <ul class="space-y-2">
               <li><a href="#">About us</a></li>
               <li><a href="#">Blog</a></li>
@@ -496,7 +629,7 @@
         </div>
 
         <div class="!m-0 p-0 ">
-          <p class="text-white py-2">
+          <p class="py-2 text-white">
             © Copyright by M.A.R.C. 2023 All rights Reserved
           </p>
         </div>
