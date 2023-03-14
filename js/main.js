@@ -1,3 +1,11 @@
+const mobileBtn = document.querySelector('#menu');
+const mobileMenu = document.querySelector('#mobile-menu');
+
+mobileBtn.addEventListener('click', function () {
+  mobileMenu.classList.toggle('hidden');
+  mobileMenu.classList.toggle('flex');
+});
+
 const dropdownBtn = document.querySelector('#dropdown');
 const dropdownMenu = document.querySelector('#dropdown-menu');
 
@@ -5,6 +13,15 @@ dropdownBtn.addEventListener('click', function () {
   dropdownMenu.classList.toggle('hidden');
   dropdownMenu.classList.toggle('flex');
 });
+
+const dropdownBtn1 = document.querySelector('#dropdown-mobile');
+const dropdownMenu1 = document.querySelector('#dropdown-menu-mobile');
+
+dropdownBtn1.addEventListener('click', function () {
+  dropdownMenu1.classList.toggle('hidden');
+  dropdownMenu1.classList.toggle('flex');
+});
+
 
 //list of categories
 const sapCon = document.getElementById('sap-consulting');
