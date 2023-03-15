@@ -22,16 +22,16 @@ dropdownBtn1.addEventListener('click', function () {
   dropdownMenu1.classList.toggle('flex');
 });
 
-
 //list of categories
-const sapCon = document.getElementById('sap-consulting');
+const sapCon = document.getElementById('sapconsulting');
 const independent = document.getElementById('independent');
 const sapClients = document.getElementById('sap-clients');
 
 //block of text for each category
-const sapConBlock = document.getElementById('sap-consulting-block');
+const sapConBlock = document.getElementById('sapconsulting-block');
 const independentBlock = document.getElementById('independent-block');
 const sapClientsBlock = document.getElementById('sap-clients-block');
+
 
 sapCon.addEventListener('click', (e) => {
   sapClients.classList.remove('bg-brightBlue');
@@ -65,3 +65,21 @@ sapClients.addEventListener('click', () => {
   sapConBlock.classList.add('hidden');
   independentBlock.classList.add('hidden');
 });
+
+
+const tabs = document.querySelectorAll('[data-tab-target]')
+const tabContents = document.querySelectorAll('[data-tab-content]')
+
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    const target = document.querySelector(tab.dataset.tabTarget)
+    tabContents.forEach(tabContent => {
+      tabContent.classList.remove('active')
+    })
+    tabs.forEach(tab => {
+      tab.classList.remove('active')
+    })
+    tab.classList.add('active')
+    target.classList.add('active')
+  })
+})
