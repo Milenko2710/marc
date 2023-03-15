@@ -157,14 +157,152 @@
   <main>
     <section class="flex flex-col items-center justify-center pt-32 pb-28 mt-[-65px]"
       style="background-image:url('./src/assets/images/lines.svg')">
-      <h1 class="text-2xl font-bold md:text-4xl">PREPARING FOR YOUR SEGREGATION OF DUTIES AUDIT</h1>
-      <p class="w-6/12 px-10 mt-5 text-base text-center">Dec 18, 2021</p>
+      <h1 class="text-2xl font-bold md:text-4xl">SEGREGATION OF DUTIES BASICS</h1>
+      <p class="w-6/12 px-10 mt-5 text-base text-center">Posted Dec 18, 2021</p>
     </section>
 
-    <section class="pt-10 pb-10 bg-white py-6 rounded-t-[5rem]">
+    <section class="flex flex-col justify-center items-center pt-10 pb-10 bg-white py-6 rounded-t-[5rem]">
+      <div class="flex flex-wrap justify-center gap-12 mt-10">
+        <div class="flex flex-col px-10 lg:px-40">
+          <img src="./src/assets/images/blog_image.png" />
+          
+          <div class="mt-10 lg:px-20 space-y-6">
+            <h2 class="font-bold text-black text-3xl">
+              What is segregation of duties?         
+            </h2>
+            <p class="text-black">
+              Simply put, it is the separation between two or more tasks such that they cannot be performed by the same person. 
+              Segregation of duties (or ‘SoD’ as it is commonly abbreviated to) is typically applied to tasks which, if performed by the same person, 
+              allow for fraud or error to be committed and then concealed. 
+            </p>
+  
+            <p class="text-black">
+              A simple example: Andy counts how many cans of tuna are available in the pantry and notes this down. 
+              William then verifies the number of cans and signs his name to indicate that he has performed his review. 
+            </p>
+  
+            <p class="text-black">
+              The counting and review processes should not be performed by the same person, otherwise he/she could record an incorrect number 
+              and it would not be detected during the review process.
+            </p>
+          </div>
+          
+          
+          <div class="mt-10 mb-10 lg:px-20 space-y-6">
+            <h2 class="font-bold text-black text-3xl">
+              Segregation of duties in SAP        
+            </h2>
+            <p class="text-black">
+              Segregation of duties is relevant for tasks in and outside of the system. When a system such as SAP is used, 
+              SoD can be implemented through carefully designed user access rights.
+            </p>
+            
+            <div class="space-y-6">
+              <p class="text-black">
+                Here are some examples of SoD in the system:
+              </p>
+              <ul class="mt-5 ml-8 space-y-4" style="list-style-type: disc;">
+                <li class="text-black">
+                  A user should not be able to change vendor master data and make invoice payments. Why? How could fraud/error occur? 
+                  The user could change the vendor’s bank details to their own bank account and make payment to the vendor. 
+                  The result is that the payment is fraudulently received by the user.              
+                </li>
+                <li class="text-black">
+                  A user should not have access to create a purchase order and approve the purchase order. Why? 
+                  The user could create a fictitious purchase order and approve it themselves.
+                </li>
+                <li class="text-black">
+                  A user should not have access to create sales orders and unblock customers. Why? 
+                  A scenario could arise whereby a sales order is raised against a blocked customer. In order to allow the sales order to be posted, 
+                  the user unblocks the customer without a proper risk review. This could lead to goods being delivered to an unwanted customer or payment not being received.
+                </li>
+              </ul>
+              
+              <p class="text-black">
+                These examples show that a real business risk can arise if some conflicting tasks can be performed by one and the same person.
+              </p>
+              <p class="text-black">
+                Using the first example above, segregation of duties should be established between the tasks of changing vendor master data and making invoice payments. 
+                However, sometimes you may see users who are granted access to do both in the system. Why would that be so?.
+              </p>
+              <p class="text-black">
+                In some cases, segregation of duties cannot be established because there are not enough 
+                employees to allow tasks to be segregated. Other times, tasks are assigned accidentally.
+              </p>
+            </div>
+          </div>
+          
+          <img src="./src/assets/images/blog_image2.png" class="lg:mt-5"/>
+
+          <div class="mt-10 mb-10 lg:px-20 space-y-6">
+            <h2 class="font-bold text-black text-3xl">
+              When SoD cannot be achieved       
+            </h2>
+            <p class="text-black">
+              Using the above example again, a payment clerk may require access to view vendor details in order to help verify necessary details against the invoice. 
+              However, access to change vendor details is not required. Therefore, in this case, a simple remediation would be to remove the user’s access to change vendor details and give them display-only access instead. Other conflicts may require mitigating controls to be put in place.
+            </p>
+            <p class="text-black">
+              Segregation of duties controls should be implemented on a preventative basis, such that any access rights given to users are free of SoD conflicts.
+            </p>
+          </div>
+        </div>
+
+        <div class="container mx-auto text-center">
+          <h2 class="text-2xl font-bold text-black md:text-4xl">Other articles</h2>
+          <p class="mt-5 text-base text-center text-black">
+            Read other articles you might be interested in
+          </p>
+        </div>
+        
+        <div class="flex flex-col flex-wrap justify-center gap-12 md:flex-row">
+          <div class="flex flex-col w-full p-6 space-y-6 text-left rounded-lg md:w-1/4 bg-brightBlue">
+            <img src="./src/assets/images/article2.svg" />
+            <h2 class="font-bold text-black">
+              PREPARING FOR YOUR SEGREGATION OF DUTIES AUDIT
+            </h2>
+            <div>
+              <a href="#" class="px-3 py-1 rounded text-primary bg-blue">Dec 18, 2021</a>
+            </div>
+
+            <p class="text-black line-clamp-2">
+              Grants temporary broad access for emergency situations to
+              privileged ID’s for support teams in a... read more
+            </p>
+          </div>
+
+          <div class="flex flex-col w-full p-6 space-y-6 text-left rounded-lg md:w-1/4 bg-brightBlue">
+            <img src="./src/assets/images/article1.svg" />
+            <h2 class="font-bold text-black">
+              PREPARING FOR YOUR SEGREGATION OF DUTIES AUDIT
+            </h2>
+            <div>
+              <a href="#" class="px-3 py-1 rounded text-primary bg-blue">Dec 18, 2021</a>
+            </div>
+            <p class="text-black">
+              Grants temporary broad access for emergency situations to
+              privileged ID’s for support teams in a... read more
+            </p>
+          </div>
+
+          <div class="flex flex-col w-full p-6 space-y-6 text-left rounded-lg md:w-1/4 bg-brightBlue">
+            <img src="./src/assets/images/article3.svg" />
+            <h2 class="font-bold text-black">
+              PREPARING FOR YOUR SEGREGATION OF DUTIES AUDIT
+            </h2>
+            <div>
+              <a href="#" class="px-3 py-1 rounded text-primary bg-blue">Dec 18, 2021</a>
+            </div>
+            <p class="text-black">
+              Grants temporary broad access for emergency situations to
+              privileged ID’s for support teams in a... read more
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
-
+  
   <footer class="mt-20 bg-blackBright">
     <div class="">
       <div class="container flex flex-col px-5 py-20 pb-5 mx-auto space-y-8">
