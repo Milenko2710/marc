@@ -8,3 +8,26 @@
 p{
    @apply opacity-50 text-left;
 }
+
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
+
+.tabs {
+  display: flex;
+  width: 100%;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px;
+}
+
+
+.services-tabs::-webkit-scrollbar {
+    display: none;
+}
