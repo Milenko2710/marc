@@ -1,216 +1,175 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./dist/main.css" rel="stylesheet" /> 
-  </head>
-  <body class="text-white bg-blackBright">
 
-    <nav>
-      <div class="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div class="relative flex items-center justify-between h-16">
-          <div class="absolute inset-y-0 right-0 flex items-center md:hidden">
-            <!-- Mobile menu button-->
-            <button type="button" id="menu" class="inline-flex items-center justify-center p-2 text-gray-400 rounded-md hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-expanded="false">
-              <span class="sr-only">Open main menu</span>
-              <!--
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./dist/main.css" rel="stylesheet" />
+</head>
+
+<body class="text-white bg-blackBright">
+
+  <nav>
+    <div class="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div class="relative flex items-center justify-between h-16">
+        <div class="absolute inset-y-0 right-0 flex items-center md:hidden">
+          <!-- Mobile menu button-->
+          <button type="button" id="menu"
+            class="inline-flex items-center justify-center p-2 text-gray-400 rounded-md hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <!--
                 Icon when menu is closed.
     
                 Menu open: "hidden", Menu closed: "block"
               -->
-              <svg class="block w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-              </svg>
-              <!--
+            <svg class="block w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <!--
                 Icon when menu is open.
     
                 Menu open: "block", Menu closed: "hidden"
               -->
-              <svg class="hidden w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
+            <svg class="hidden w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex items-center justify-start flex-1 mt-4 sm:items-stretch sm:justify-start">
+          <div class="flex items-center flex-shrink-0">
+            <a href="./index.html"><img class="block w-auto h-8 lg:hidden" src="./src/assets/images/logo.svg"
+                alt="MARC Solutions"></a>
+            <a href="./index.html"><img class="hidden w-auto h-8 lg:block" src="./src/assets/images/logo.svg"
+                alt="MARC Solutions"></a>
           </div>
-          <div class="flex items-center justify-start flex-1 mt-4 sm:items-stretch sm:justify-start">
-            <div class="flex items-center flex-shrink-0">
-              <a href="./index.html"><img class="block w-auto h-8 lg:hidden" src="./src/assets/images/logo.svg" alt="MARC Solutions"></a>
-              <a href="./index.html"><img class="hidden w-auto h-8 lg:block" src="./src/assets/images/logo.svg" alt="MARC Solutions"></a>
-            </div>
-            <div class="hidden sm:ml-6 md:block">
-              <div class="flex space-x-4">
-                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <a href="#" id="dropdown" class="block px-3 py-2 text-base font-medium text-white bg-gray-900 rounded-md" aria-current="page">Products</a>
-                <div
-                id="dropdown-menu"
-                class="absolute hidden mt-10 text-black bg-white rounded w-max" style="margin-left: 0;"
-              >
+          <div class="hidden sm:ml-6 md:block">
+            <div class="flex space-x-4">
+              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+              <a href="#" id="dropdown" class="block px-3 py-2 text-base font-medium text-white bg-gray-900 rounded-md"
+                aria-current="page">Products</a>
+              <div id="dropdown-menu" class="absolute hidden mt-10 text-black bg-white rounded w-max"
+                style="margin-left: 0;">
                 <ul class="flex flex-col px-4 py-2 divide-y">
                   <li class="flex py-2">
-                    <img
-                      src="./src/assets/images/menu-logo.png"
-                      class="w-5 h-5"
-                    />
-                    <a href="./acm.html" class="pl-3"
-                      >Access Conflict Monitor (ACM)</a
-                    >
+                    <img src="./src/assets/images/menu-logo.png" class="w-5 h-5" />
+                    <a href="./acm.html" class="pl-3">Access Conflict Monitor (ACM)</a>
                   </li>
                   <li class="flex py-2">
-                    <img
-                      src="./src/assets/images/menu-logo2.png"
-                      class="w-5 h-5"
-                    />
-                    <a href="./icm.html" class="pl-3"
-                      >Internal Control Monitor (ICM)</a
-                    >
+                    <img src="./src/assets/images/menu-logo2.png" class="w-5 h-5" />
+                    <a href="./icm.html" class="pl-3">Internal Control Monitor (ICM)</a>
                   </li>
                   <li class="flex py-2">
-                    <img
-                      src="./src/assets/images/menu-logo3.png"
-                      class="w-5 h-5"
-                    />
-                    <a href="./pam.html" class="pl-3"
-                      >Privilege Acess Management (PAM)</a
-                    >
+                    <img src="./src/assets/images/menu-logo3.png" class="w-5 h-5" />
+                    <a href="./pam.html" class="pl-3">Privilege Acess Management (PAM)</a>
                   </li>
                   <li class="flex py-2">
-                    <img
-                      src="./src/assets/images/menu-logo4.png"
-                      class="w-5 h-5"
-                    />
-                    <a href="./cam.html" class="pl-3"
-                      >Compliant Access Management (CAM)</a
-                    >
+                    <img src="./src/assets/images/menu-logo4.png" class="w-5 h-5" />
+                    <a href="./cam.html" class="pl-3">Compliant Access Management (CAM)</a>
                   </li>
                   <li class="flex py-2">
-                    <img
-                      src="./src/assets/images/menu-logo5.png"
-                      class="w-5 h-5"
-                    />
-                    <a href="./rem.html" class="pl-3"
-                      >Risk Execution Monitor (REM)</a
-                    >
+                    <img src="./src/assets/images/menu-logo5.png" class="w-5 h-5" />
+                    <a href="./rem.html" class="pl-3">Risk Execution Monitor (REM)</a>
                   </li>
                 </ul>
               </div>
-    
-                <a href="./services.html" class="px-3 py-2 font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white text-md">Services</a>
-    
-                <a href="./about-us.html" class="px-3 py-2 font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white text-md">About Us</a>
-    
-                <a href="./blog.html" class="px-3 py-2 font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white text-md">Blog</a>
-              </div>
-            </div>
-          </div>
-          <div class="absolute right-0 flex items-center hidden md:block inset-y-7">
-            <div class="space-x-2">
-              <a
-                href="./contact-us.html"
-                class="px-4 py-2 font-medium bg-transparent border rounded-full border-primary lg:px-5 lg:py-3 text-md"
-                >Contact Us</a
-              >
-              <a
-                href="./get-started.html"
-                class="px-4 py-2 font-medium text-white rounded-full bg-primary lg:px-5 lg:py-3 text-md"
-                >Get started
-              </a>
+
+              <a href="./services.html"
+                class="px-3 py-2 font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white text-md">Services</a>
+
+              <a href="./about-us.html"
+                class="px-3 py-2 font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white text-md">About
+                Us</a>
+
+              <a href="./blog.html"
+                class="px-3 py-2 font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white text-md">Blog</a>
             </div>
           </div>
         </div>
+        <div class="absolute right-0 flex items-center hidden md:block inset-y-7">
+          <div class="space-x-2">
+            <a href="./contact-us.html"
+              class="px-4 py-2 font-medium bg-transparent border rounded-full border-primary lg:px-5 lg:py-3 text-md">Contact
+              Us</a>
+            <a href="./get-started.html"
+              class="px-4 py-2 font-medium text-white rounded-full bg-primary lg:px-5 lg:py-3 text-md">Get started
+            </a>
+          </div>
+        </div>
       </div>
-    
-      <!-- Mobile menu, show/hide based on menu state. -->
-      <div class="hidden md:hidden" id="mobile-menu">
-        <div class="px-2 pt-2 pb-3 space-y-1">
-          <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-          <a href="#" id="dropdown1" class="block px-3 py-2 text-base font-medium text-white bg-gray-900 rounded-md" aria-current="page">Products</a>
-          <div
-          id="dropdown-menu1"
-          class="absolute hidden mt-10 text-black bg-white rounded w-max" style="margin-left: 0;"
-        >
+    </div>
+
+    <!-- Mobile menu, show/hide based on menu state. -->
+    <div class="hidden md:hidden" id="mobile-menu">
+      <div class="px-2 pt-2 pb-3 space-y-1">
+        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+        <a href="#" id="dropdown1" class="block px-3 py-2 text-base font-medium text-white bg-gray-900 rounded-md"
+          aria-current="page">Products</a>
+        <div id="dropdown-menu1" class="absolute hidden mt-10 text-black bg-white rounded w-max"
+          style="margin-left: 0;">
           <ul class="flex flex-col px-4 py-2 divide-y">
             <li class="flex py-2">
-              <img
-                src="./src/assets/images/menu-logo.png"
-                class="w-5 h-5"
-              />
-              <a href="./acm.html" class="pl-3"
-                >Access Conflict Monitor (ACM)</a
-              >
+              <img src="./src/assets/images/menu-logo.png" class="w-5 h-5" />
+              <a href="./acm.html" class="pl-3">Access Conflict Monitor (ACM)</a>
             </li>
             <li class="flex py-2">
-              <img
-                src="./src/assets/images/menu-logo2.png"
-                class="w-5 h-5"
-              />
-              <a href="./icm.html" class="pl-3"
-                >Internal Control Monitor (ICM)</a
-              >
+              <img src="./src/assets/images/menu-logo2.png" class="w-5 h-5" />
+              <a href="./icm.html" class="pl-3">Internal Control Monitor (ICM)</a>
             </li>
             <li class="flex py-2">
-              <img
-                src="./src/assets/images/menu-logo3.png"
-                class="w-5 h-5"
-              />
-              <a href="./pam.html" class="pl-3"
-                >Privilege Acess Management (PAM)</a
-              >
+              <img src="./src/assets/images/menu-logo3.png" class="w-5 h-5" />
+              <a href="./pam.html" class="pl-3">Privilege Acess Management (PAM)</a>
             </li>
             <li class="flex py-2">
-              <img
-                src="./src/assets/images/menu-logo4.png"
-                class="w-5 h-5"
-              />
-              <a href="./cam.html" class="pl-3"
-                >Compliant Access Management (CAM)</a
-              >
+              <img src="./src/assets/images/menu-logo4.png" class="w-5 h-5" />
+              <a href="./cam.html" class="pl-3">Compliant Access Management (CAM)</a>
             </li>
             <li class="flex py-2">
-              <img
-                src="./src/assets/images/menu-logo5.png"
-                class="w-5 h-5"
-              />
-              <a href="./rem.html" class="pl-3"
-                >Risk Execution Monitor (REM)</a
-              >
+              <img src="./src/assets/images/menu-logo5.png" class="w-5 h-5" />
+              <a href="./rem.html" class="pl-3">Risk Execution Monitor (REM)</a>
             </li>
           </ul>
         </div>
-    
-          <a href="#" class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white">Services</a>
-    
-          <a href="#" class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white">About Us</a>
-    
-          <a href="#" class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white">Blog</a>
 
-          <a href="#" class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white">Contact Us</a>
+        <a href="#"
+          class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white">Services</a>
 
-          <a href="#" class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white">Get started</a>
+        <a href="#"
+          class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white">About
+          Us</a>
 
-        </div>
+        <a href="#"
+          class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white">Blog</a>
+
+        <a href="#"
+          class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white">Contact
+          Us</a>
+
+        <a href="#"
+          class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white">Get
+          started</a>
+
       </div>
-    </nav>
-    <main>
-      <section class="flex flex-col items-center justify-center pt-32 pb-28 mt-[-65px]" style="background-image:url('./src/assets/images/lines.svg')">
-        <h1 class="text-2xl font-bold md:text-4xl">Blog</h1>
-        <p class="w-6/12 px-10 mt-5 text-base text-center">Feel our life, read our latest articles.</p>
-      </section>
+    </div>
+  </nav>
+  <main>
+    <section class="flex flex-col items-center justify-center pt-32 pb-28 mt-[-65px]"
+      style="background-image:url('./src/assets/images/lines.svg')">
+      <h1 class="text-2xl font-bold md:text-4xl">Blog</h1>
+      <p class="w-6/12 px-10 mt-5 text-base text-center">Feel our life, read our latest articles.</p>
+    </section>
 
-      <section
-        class="flex flex-col justify-center items-center pt-10 pb-10 bg-white py-6 rounded-t-[5rem]"
-      >
+    <section class="flex flex-col justify-center items-center pt-10 pb-10 bg-white py-6 rounded-t-[5rem]">
       <div class="flex flex-wrap justify-center gap-12 mt-10">
-        <div
-          class="flex flex-col w-1/4 p-6 space-y-6 text-justify rounded-lg bg-brightBlue"
-        >
+        <div class="flex flex-col w-1/4 p-6 space-y-6 text-justify rounded-lg bg-brightBlue">
           <img src="./src/assets/images/article1.svg" />
           <h2 class="font-bold text-black">
             PREPARING FOR YOUR SEGREGATION OF DUTIES AUDIT
           </h2>
           <div>
-            <a href="#" class="px-3 py-1 rounded text-primary bg-blue"
-              >Dec 18, 2021</a
-            >
+            <a href="#" class="px-3 py-1 rounded text-primary bg-blue">Dec 18, 2021</a>
           </div>
 
           <p class="text-black line-clamp-3">
@@ -219,17 +178,13 @@
           </p>
         </div>
 
-        <div
-          class="flex flex-col w-1/4 p-6 space-y-6 text-justify rounded-lg bg-brightBlue"
-        >
+        <div class="flex flex-col w-1/4 p-6 space-y-6 text-justify rounded-lg bg-brightBlue">
           <img src="./src/assets/images/article2.svg" />
           <h2 class="font-bold text-black">
             PREPARING FOR YOUR SEGREGATION OF DUTIES AUDIT
           </h2>
           <div>
-            <a href="#" class="px-3 py-1 rounded text-primary bg-blue"
-              >Dec 18, 2021</a
-            >
+            <a href="#" class="px-3 py-1 rounded text-primary bg-blue">Dec 18, 2021</a>
           </div>
           <p class="text-black">
             Grants temporary broad access for emergency situations to
@@ -237,17 +192,13 @@
           </p>
         </div>
 
-        <div
-          class="flex flex-col w-1/4 p-6 space-y-6 text-justify rounded-lg bg-brightBlue"
-        >
+        <div class="flex flex-col w-1/4 p-6 space-y-6 text-justify rounded-lg bg-brightBlue">
           <img src="./src/assets/images/article3.svg" />
           <h2 class="font-bold text-black">
             PREPARING FOR YOUR SEGREGATION OF DUTIES AUDIT
           </h2>
           <div>
-            <a href="#" class="px-3 py-1 rounded text-primary bg-blue"
-              >Dec 18, 2021</a
-            >
+            <a href="#" class="px-3 py-1 rounded text-primary bg-blue">Dec 18, 2021</a>
           </div>
           <p class="text-black">
             Grants temporary broad access for emergency situations to
@@ -255,17 +206,13 @@
           </p>
         </div>
 
-        <div
-          class="flex flex-col w-1/4 p-6 space-y-6 text-justify rounded-lg bg-brightBlue"
-        >
+        <div class="flex flex-col w-1/4 p-6 space-y-6 text-justify rounded-lg bg-brightBlue">
           <img src="./src/assets/images/article1.svg" />
           <h2 class="font-bold text-black">
             PREPARING FOR YOUR SEGREGATION OF DUTIES AUDIT
           </h2>
           <div>
-            <a href="#" class="px-3 py-1 rounded text-primary bg-blue"
-              >Dec 18, 2021</a
-            >
+            <a href="#" class="px-3 py-1 rounded text-primary bg-blue">Dec 18, 2021</a>
           </div>
 
           <p class="text-black line-clamp-2">
@@ -274,17 +221,13 @@
           </p>
         </div>
 
-        <div
-          class="flex flex-col w-1/4 p-6 space-y-6 text-justify rounded-lg bg-brightBlue"
-        >
+        <div class="flex flex-col w-1/4 p-6 space-y-6 text-justify rounded-lg bg-brightBlue">
           <img src="./src/assets/images/article2.svg" />
           <h2 class="font-bold text-black">
             PREPARING FOR YOUR SEGREGATION OF DUTIES AUDIT
           </h2>
           <div>
-            <a href="#" class="px-3 py-1 rounded text-primary bg-blue"
-              >Dec 18, 2021</a
-            >
+            <a href="#" class="px-3 py-1 rounded text-primary bg-blue">Dec 18, 2021</a>
           </div>
           <p class="text-black">
             Grants temporary broad access for emergency situations to
@@ -292,17 +235,13 @@
           </p>
         </div>
 
-        <div
-          class="flex flex-col w-1/4 p-6 space-y-6 text-justify rounded-lg bg-brightBlue"
-        >
+        <div class="flex flex-col w-1/4 p-6 space-y-6 text-justify rounded-lg bg-brightBlue">
           <img src="./src/assets/images/article3.svg" />
           <h2 class="font-bold text-black">
             PREPARING FOR YOUR SEGREGATION OF DUTIES AUDIT
           </h2>
           <div>
-            <a href="#" class="px-3 py-1 rounded text-primary bg-blue"
-              >Dec 18, 2021</a
-            >
+            <a href="#" class="px-3 py-1 rounded text-primary bg-blue">Dec 18, 2021</a>
           </div>
           <p class="text-black">
             Grants temporary broad access for emergency situations to
@@ -310,84 +249,85 @@
           </p>
         </div>
       </div>
-    
-      </section>
-    </main>
 
-    <footer>
-      <div class="">
-        <div class="container flex flex-col px-5 py-20 pb-5 mx-auto space-y-8">
-          <div class="flex flex-col-reverse justify-between md:flex-row">
-            <div class="space-y-8 text-center md:text-left">
-              <a href="#">
-                <img src="./src/assets/images/logo.svg" class="mx-auto md:ml-0" />
-              </a>
-              <h4 class="text-white">
-                Reliable Compliance Solutions made Accessible
-              </h4>
-              <img src="./src/assets/images/sertified.svg " class="mx-auto md:ml-0" />
-  
-              <ul class="flex justify-center space-x-2 md:justify-start">
-                <li>
-                  <a href="#">
-                    <img class="w-6 m-auto" src="./src/assets/images/ln.svg" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#"> <img class="w-6 m-auto" src="./src/assets/images/twitter1.svg" /></a>
-                </li>
-              </ul>
-            </div>
-  
-            <div class="mb-8 md:mb-0">
-              <h4 class="mb-4 font-bold text-white">Products</h4>
-              <ul class="space-y-2">
-                <li><a href="#">Access Conflict Monitor</a></li>
-                <li><a href="#">Privilege access management</a></li>
-                <li><a href="#">Compliant access management</a></li>
-                <li><a href="#">Risk execution monitor</a></li>
-                <li><a href="#">Internal control monitor </a></li>
-              </ul>
-            </div>
-  
-            <div class="mb-8 md:mb-0">
-              <h4 class="mb-4 font-bold text-white">Services</h4>
-              <ul class="space-y-2">
-                <li><a href="#">M.A.R.C for SAP</a></li>
-                <li><a href="#">M.A.R.C for Non - Sap</a></li>
-                <li>
-                  <a href="#">Security and Authorization Scan, Implementation</a>
-                </li>
-                <li>
-                  <a href="#">Access & Identity Management Support Services</a>
-                </li>
-              </ul>
-            </div>
-  
-            <div class="mb-8 md:mb-0">
-              <h4 class="mb-4 font-bold text-white">About us</h4>
-              <ul class="space-y-2">
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact us</a></li>
-                <li><a href="#">How can we help?</a></li>
-                <li><a href="#">Services</a></li>
-              </ul>
-            </div>
+    </section>
+  </main>
+
+  <footer class="mt-20 bg-blackBright">
+    <div class="">
+      <div class="container flex flex-col px-5 py-20 pb-5 mx-auto space-y-8">
+        <div class="flex flex-col-reverse justify-between md:flex-row">
+          <div class="space-y-8 text-center md:text-left">
+            <a href="./index.html">
+              <img src="./src/assets/images/logo.svg" class="mx-auto md:ml-0" />
+            </a>
+            <h4 class="text-white">
+              Reliable Compliance Solutions made Accessible
+            </h4>
+            <img src="./src/assets/images/sertified.svg " class="mx-auto md:ml-0" />
+
+            <ul class="flex justify-center space-x-2 md:justify-start">
+              <li>
+                <a href="#">
+                  <img class="w-6 m-auto" src="./src/assets/images/ln.svg" />
+                </a>
+              </li>
+              <li>
+                <a href="#"> <img class="w-6 m-auto" src="./src/assets/images/twitter1.svg" /></a>
+              </li>
+            </ul>
           </div>
-          <div>
-            <hr class="mx-auto my-4 !mb-5 border-1 rounded md:my-10 border-gray-400 opacity-40  " />
+
+          <div class="mb-8 md:mb-0">
+            <h4 class="mb-4 font-bold text-white">Products</h4>
+            <ul class="space-y-2">
+              <li><a href="./acm.html">Access Conflict Monitor</a></li>
+              <li><a href="./pam.html">Privilege access management</a></li>
+              <li><a href="./cam.html">Compliant access management</a></li>
+              <li><a href="./rem.html">Risk execution monitor</a></li>
+              <li><a href="./icm.html">Internal control monitor </a></li>
+            </ul>
           </div>
-  
-          <div class="!m-0 p-0 ">
-            <p class="py-2 text-white">
-              © Copyright by M.A.R.C. 2023 All rights Reserved
-            </p>
+
+          <div class="mb-8 md:mb-0">
+            <h4 class="mb-4 font-bold text-white">Services</h4>
+            <ul class="space-y-2">
+              <li><a href="#">M.A.R.C for SAP</a></li>
+              <li><a href="#">M.A.R.C for Non - Sap</a></li>
+              <li>
+                <a href="#">Security and Authorization Scan, Implementation</a>
+              </li>
+              <li>
+                <a href="#">Access & Identity Management Support Services</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mb-8 md:mb-0">
+            <h4 class="mb-4 font-bold text-white">About us</h4>
+            <ul class="space-y-2">
+              <li><a href="./about-us.html">About us</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./contact-us.html">Contact us</a></li>
+              <li><a href="#">How can we help?</a></li>
+              <li><a href="./services.html">Services</a></li>
+            </ul>
           </div>
         </div>
-      </div>
-    </footer>
+        <div>
+          <hr class="mx-auto my-4 !mb-5 border-1 rounded md:my-10 border-gray-400 opacity-40  " />
+        </div>
 
-    <script src="./js/main.js"></script>
-  </body>
+        <div class="!m-0 p-0 ">
+          <p class="py-2 text-white">
+            © Copyright by M.A.R.C. 2023 All rights Reserved
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+
 </html>
