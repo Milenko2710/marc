@@ -164,9 +164,10 @@
       </p>
     </section>
 
-    <section class="flex flex-col justify-center items-center pt-10 pb-20 bg-white py-6 rounded-t-[5rem]">
-      <div class="container flex flex-row gap-10 justify-evenly">
-        <div class="w-1/2 py-10 rounded-lg bg-brightBlue">
+    <section class="flex flex-col justify-center items-center pt-10 bg-white py-6 md:rounded-t-[5rem] rounded-t-[2rem]">
+
+      <div class="container flex md:flex-row flex-col-reverse gap-10 justify-evenly md:p-0 p-5 ">
+        <div class="md:w-1/2 w-full  py-10 md:mx-10 mx-0 rounded-lg bg-brightBlue">
           <div class="py-2 ml-10 space-y-4">
             <h2 class="font-bold text-black">Our address:</h2>
             <p class="text-black">L5, The Hive, VR Bengaluru -560049</p>
@@ -177,17 +178,17 @@
           </div>
         </div>
 
-        <div class="w-1/2 px-12 py-16 m-2 border border-gray">
+        <div class="md:w-1/2 w-full px-12 py-10 md:mx-10 mx-0 border border-gray rounded-lg">
           <form action="#">
             <div class="flex flex-col gap-2">
               <input type="text" placeholder="Your First Name and Last Name*"
-                class="w-full px-2 py-1 border rounded-lg border-gray focus:outline-0">
+                class="w-full px-2 py-1 border rounded-lg text-black border-gray focus:outline-0">
               <input type="text" placeholder="Your email*"
-                class="w-full px-2 py-1 border rounded-lg border-gray focus:outline-0">
-              <input type="text" placeholder="Your message*"
-                class="w-full h-32 px-2 py-1 border rounded-lg border-gray focus:outline-0">
+                class="w-full px-2 py-1 border rounded-lg text-black border-gray focus:outline-0">
+              <textarea type="text" cols="50" placeholder="Your message*"
+                class="w-full  px-2 py-1 border rounded-lg text-black border-gray focus:outline-0 h-32"></textarea>
               <button
-                class="w-full py-3 text-white border rounded-full border-gray hover:bg-white hover:text-black bg-primary">Request
+                class="w-full py-3 text-white border rounded-full border-gray hover:bg-white hover:text-black hover:border-primary bg-primary">Request
                 demo</button>
               <p class="text-sm text-center text-black">We process your information in accordance with our
                 <b>Privacy Policy.</b>
