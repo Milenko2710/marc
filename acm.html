@@ -39,7 +39,7 @@
         </div>
         <div class="flex items-center justify-start flex-1 mt-4 sm:items-stretch sm:justify-start">
           <div class="flex items-center flex-shrink-0">
-            <a href="./index.html"><img class="block w-auto h-8 lg:hidden" src="./src/assets/images/logo.svg"
+            <a href="./index.html"><img class="block w-auto h-8 lg:hidden ml-2" src="./src/assets/images/logo.svg"
                 alt="MARC Solutions"></a>
             <a href="./index.html"><img class="hidden w-auto h-8 lg:block" src="./src/assets/images/logo.svg"
                 alt="MARC Solutions"></a>
@@ -101,14 +101,16 @@
     </div>
 
     <!-- Mobile menu, show/hide based on menu state. -->
-    <div class="hidden md:hidden" id="mobile-menu">
-      <div class="px-2 pt-2 pb-3 space-y-1">
+    <div class="hidden md:hidden absolute top-0 bg-white text-black w-full h-full p-2 z-50" id="mobile-menu">
+      <img src="./src/assets/images/exit_btn.svg" class="w-[20px] h-[20px] absolute top-6 right-9 cursor-pointer"
+        id="close-menu" />
+      <div class="px-2 pt-2 pb-3 space-y-1 w-full mt-16">
         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-        <a href="#" id="dropdown1" class="block px-3 py-2 text-base font-medium text-white bg-gray-900 rounded-md"
-          aria-current="page">Products</a>
-        <div id="dropdown-menu1" class="absolute hidden mt-10 text-black bg-white rounded w-max"
-          style="margin-left: 0;">
-          <ul class="flex flex-col px-4 py-2 divide-y">
+        <a href="#" id="dropdown-mobile"
+          class="block px-3 py-3 text-black font-medium border-bottom-solid border-b-2 rounded-none border-borderColor flex justify-between items-center"
+          aria-current="page">Products <img src='./src/assets/images/arrow-icon.svg' class="mr-3" id="rotated" /></a>
+        <div id="dropdown-menu-mobile" class="hidden" style="margin-left: 0;">
+          <ul class="px-2">
             <li class="flex py-2">
               <img src="./src/assets/images/menu-logo.png" class="w-5 h-5" />
               <a href="./acm.html" class="pl-3">Access Conflict Monitor (ACM)</a>
@@ -132,24 +134,28 @@
           </ul>
         </div>
 
-        <a href="#"
-          class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white">Services</a>
+        <a href="./services.html"
+          class="block px-3 py-3 text-black font-medium border-bottom-solid border-b-2 rounded-none border-borderColor">Services</a>
 
-        <a href="#"
-          class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white">About
+        <a href="./about-us.html"
+          class="block px-3 py-3 text-black font-medium border-bottom-solid border-b-2 rounded-none border-borderColor">About
           Us</a>
 
-        <a href="#"
-          class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white">Blog</a>
 
-        <a href="#"
-          class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white">Contact
-          Us</a>
+        <a href="./blog.html"
+          class="block px-3 py-3 text-black font-medium border-bottom-solid border-b-2 rounded-none border-borderColor">Blog</a>
 
-        <a href="#"
-          class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white">Get
-          started</a>
-
+        <div class="absolute bottom-10 left-0 w-full">
+          <div class="flex justify-center">
+            <a href="./contact-us.html"
+              class="font-medium bg-transparent border rounded-full border-primary px-8 py-3 text-md">
+              Contact Us
+            </a>
+            <a href="./get-started.html" class="font-medium text-white rounded-full bg-primary px-8 py-3 text-md ml-5 ">
+              Get started
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </nav>
