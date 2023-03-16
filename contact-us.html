@@ -165,8 +165,9 @@
     </section>
 
     <section class="flex flex-col justify-center items-center pt-10 bg-white py-6 md:rounded-t-[5rem] rounded-t-[2rem]">
-      <div class="container flex flex-row gap-10 justify-evenly">
-        <div class="w-1/2 py-10 rounded-lg bg-brightBlue">
+
+      <div class="container flex md:flex-row flex-col-reverse gap-10 justify-evenly md:p-0 p-5 ">
+        <div class="md:w-1/2 w-full  py-10 md:mx-10 mx-0 rounded-lg bg-brightBlue">
           <div class="py-2 ml-10 space-y-4">
             <h2 class="font-bold text-black">Our address:</h2>
             <p class="text-black">L5, The Hive, VR Bengaluru -560049</p>
@@ -177,15 +178,15 @@
           </div>
         </div>
 
-        <div class="w-1/2 px-12 py-16 m-2 border border-gray">
+        <div class="md:w-1/2 w-full px-12 py-10 md:mx-10 mx-0 border border-gray rounded-lg">
           <form action="#">
             <div class="flex flex-col gap-2">
               <input type="text" placeholder="Your First Name and Last Name*"
-                class="w-full px-2 py-1 border rounded-lg border-gray focus:outline-0">
+                class="w-full px-2 py-1 border rounded-lg text-black border-gray focus:outline-0">
               <input type="text" placeholder="Your email*"
-                class="w-full px-2 py-1 border rounded-lg border-gray focus:outline-0">
-              <input type="text" placeholder="Your message*"
-                class="w-full h-32 px-2 py-1 border rounded-lg border-gray focus:outline-0">
+                class="w-full px-2 py-1 border rounded-lg text-black border-gray focus:outline-0">
+              <textarea type="text" cols="50" placeholder="Your message*"
+                class="w-full  px-2 py-1 border rounded-lg text-black border-gray focus:outline-0 h-32"></textarea>
               <button class="w-full py-3 text-black bg-white border rounded-full border-gray hover:bg-primary">Send
                 message</button>
 
@@ -197,9 +198,11 @@
       </div>
     </section>
 
-    <section class="flex flex-row justify-center p-5 pt-10 bg-white pb-20">
-      <div class="container flex flex-row gap-2 m-1">
-        <div class="flex flex-col w-[23rem] space-y-5 px-6 text-justify ">
+    <section class="pt-10 bg-white pb-20">
+      <div class="container flex md:flex-row flex-col gap-2 px-2 mx-auto max-w-7xl">
+        <div class="flex flex-col  md:space-y-5  space-y-2
+       px-6 text-justify md:bg-white bg-brightBlue md:rounded-none rounded-lg md:p-0 p-6 md:my-0 my-2">
+
           <img src="./src/assets/images/videos.png" class="w-10 h-10" />
           <h2 class="font-bold text-black">VIDEO</h2>
           <p class="text-black">
@@ -207,15 +210,17 @@
           </p>
         </div>
 
-        <div class="flex flex-col w-[23rem] space-y-5 px-6 text-justify">
-          <img src="./src/assets/images/ideas.png" class="w-12 h-10" />
+        <div
+          class="flex flex-col md:w-[23rem] w-full  md:space-y-5  space-y-2 px-6 text-justify md:bg-white bg-brightBlue md:rounded-none rounded-lg  md:p-0 p-6 md:my-0 my-2">
+          <img src="./src/assets/images/ideas.png" class="w-10 h-10" />
           <h2 class="font-bold text-black">IDEAS</h2>
           <p class="text-black">
             Do you have new ideas about new features to be included in MARC?
           </p>
         </div>
 
-        <div class="flex flex-col w-[23rem] space-y-5 px-6 text-justify">
+        <div
+          class="flex flex-col md:w-[23rem] w-full  md:space-y-5  space-y-2 px-6 text-justify md:bg-white bg-brightBlue md:rounded-none rounded-lg  md:p-0 p-6 md:my-0 my-2">
           <img src="./src/assets/images/support.png" class="w-10 h-10" />
           <h2 class="font-bold text-black">SUPPORT</h2>
           <p class="text-black">
@@ -223,7 +228,8 @@
           </p>
         </div>
 
-        <div class="flex flex-col w-[23em] space-y-5 px-6 text-justify">
+        <div
+          class="flex flex-col md:w-[23rem] w-full  md:space-y-5  space-y-2 px-6 text-justify md:bg-white bg-brightBlue md:rounded-none rounded-lg  md:p-0 p-6 md:my-0 my-2">
           <img src="./src/assets/images/forums.png" class="w-10 h-10" />
           <h2 class="font-bold text-black">FORUMS</h2>
           <p class="text-black">
