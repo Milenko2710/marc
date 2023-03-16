@@ -394,64 +394,62 @@
       </div>
     </section>
 
-    <section class="flex flex-col items-center justify-center gap-0 p-6 sm:flex-row">
+    <section class="flex flex-col items-center mx-auto justify-center sm:flex-row container w-10/12 xxl:w-8/12 mx-auto tabs1">
       <div class="p-2 bg-white sm:w-1/2">
         <h2 class="text-2xl font-bold text-left text-black md:text-4xl">
           Who can benefit?
         </h2>
-        <p class="mt-5 mb-5 text-base text-left text-black md:pr-20 ">
+        <p class="mt-5 mb-5 text-base text-left text-black md:pr-20">
           M.A.R.C. is vision and result of SAP GRC consultants with wide array
           of project experience focused on Security and Access Controls
           implementations.
         </p>
-        <div id="sap-consulting"
-          class="items-center justify-between hidden w-full p-5 mt-5 text-black rounded bg-brightBlue md:flex">
+        <div data-tab-target="#sap1" class="active items-center justify-between hidden w-full p-5 mt-5 text-black rounded md:flex">
           <p>SAP CONSULTING SERVICES COMPANIES</p> <img class="w-5 h-5" src="./src/assets/images/arrow.png" />
         </div>
-        <div id="independent" class="items-center justify-between hidden w-full p-5 text-black rounded md:flex">
+        <div data-tab-target="#sap2" class="items-center justify-between hidden w-full p-5 text-black rounded md:flex">
           <p>INDEPENDENT AUDITORS AND SAP PROFESSIONALAS</p> <img class="w-5 h-5" src="./src/assets/images/arrow.png" />
         </div>
-        <div id="sap-clients" class="items-center justify-between hidden w-full p-5 text-black rounded md:flex">
+        <div data-tab-target="#sap3" class="items-center justify-between hidden w-full p-5 text-black rounded md:flex">
           <p>SAP CLIENTS</p> <img class="w-5 h-5" src="./src/assets/images/arrow.png" />
         </div>
       </div>
 
       <div>
-        <div id="sap-consulting-block"
-          class="bg-brightBlue rounded-xl text-black md:w-[38rem] w-full p-10 md:ml-[-1rem] flex flex-col gap-6 mb-4">
+        <div id="sap1" data-tab-content class="active bg-brightBlue rounded-xl text-black w-full p-10 flex flex-col mb-4">
           <div class="flex mb-4 w-100">
             <img class="w-20 h-20 m-auto" src="./src/assets/images/building.png" />
           </div>
           <p class="py-2">Performing IT services and user administration activities for their SAP clients.
           </p>
-          <p class="py-2 "><b>CAM:</b>
+          <p class="py-6"><b>CAM:</b>
             helps in realizing faster and better service response to clienSt user access requests.
           </p>
-          <p><b>PAM:</b>
+          <p class="py-2"><b>PAM:</b>
             helps in realizing system support service to the client which is SOD compliant and fully controllable/
             auditable by the client.</p>
 
         </div>
-        <div id="independent-block"
-          class="md:hidden flex bg-brightBlue rounded-xl text-black md:w-[38rem] w-full p-10 md:ml-[-1rem] flex-col gap-6 mb-4">
+        <div id="sap2" data-tab-content
+          class="md:hidden flex bg-brightBlue rounded-xl text-black w-full p-10 flex-col mb-4">
           <div class="flex mb-4 w-100">
             <img class="w-20 h-20 m-auto" src="./src/assets/images/people.png" />
           </div>
           <p class="py-2">Auditing implementation of SAP application and user controls at their SAP clients.
           </p>
-          <p class="py-2"><b>ACM:</b>
+          <p class="py-6"><b>ACM:</b>
             helps in effective substantive test of implemented SAP access controls – either in on-line or off-line mode
           </p>
-          <p class="py-2 "><b>REM:</b>
+          <p class="py-2 pb-6"><b>REM:</b>
             helps in qualifying access risks in terms of actual occurrence of access violations – either in on-line or
             off-line mode</p>
-          <p><b>ICM:</b>
+          <p class="py-2"><b>ICM:</b>
             helps in effective substantive test of implemented SAP configuration controls and manual user controls
             (on-line mode only)</p>
         </div>
 
-        <div id="sap-clients-block"
-          class="md:hidden flex bg-brightBlue rounded-xl text-black md:w-[38rem] w-full p-10 md:ml-[-1rem] flex-col gap-6 mb-4">
+        <div id="sap3" data-tab-content
+          class="md:hidden flex bg-brightBlue rounded-xl text-black w-full p-10 flex-col mb-4">
           <div class="flex mb-4 w-100 ">
             <img class="w-20 h-20 m-auto" src="./src/assets/images/head.png" />
           </div>
@@ -459,18 +457,18 @@
 
           <p class="py-2">Running SAP in a controlled manner.
           </p>
-          <p class="py-2"><b>ACM:</b>
+          <p class="py-6"><b>ACM:</b>
             helps in effective continuous monitoring of implemented SAP access controls and related mitigation controls
           </p>
-          <p class="py-2 "><b>REM:</b>
+          <p class="py-2 pb-6"><b>REM:</b>
             helps in monitoring actual occurrence of access violations, giving direction to defining risk mitigation
             controls</p>
-          <p class="py-2"><b>ICM:</b>
+          <p class="py-2 pb-6"><b>ICM:</b>
             helps in effective continuous monitoring of implemented SAP configuration controls and manual user controls
           </p>
-          <p class="py-2"><b>CAM:</b>
+          <p class="py-2 pb-6"><b>CAM:</b>
             helps in realizing faster and better follow-up of user access requests</p>
-          <p><b>PAM:</b>
+          <p class="py-2"><b>PAM:</b>
             helps in performing SOD compliant and fully controllable/ auditable activities by system support staff</p>
         </div>
 
@@ -608,6 +606,24 @@
   </footer>
 
   <script src="./js/main.js"></script>
+  <script>
+    const tabs = document.querySelectorAll('[data-tab-target]')
+    const tabContents = document.querySelectorAll('[data-tab-content]')
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const target = document.querySelector(tab.dataset.tabTarget)
+        tabContents.forEach(tabContent => {
+          tabContent.classList.remove('active')
+        })
+        tabs.forEach(tab => {
+          tab.classList.remove('active')
+        })
+        tab.classList.add('active')
+        target.classList.add('active')
+      })
+    })
+  </script>
 </body>
 
 </html>
