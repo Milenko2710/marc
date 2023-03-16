@@ -10,6 +10,7 @@ module.exports = {
       brightBlue: '#F7F8F9',
       blue: '#E3EFFA',
       blackBright: '#171717',
+      borderColor: '#ECECEC'
     },
   },
   plugins: ['tailwindcss ,autoprefixer', require('@tailwindcss/line-clamp')],
