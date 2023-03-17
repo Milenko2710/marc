@@ -171,36 +171,36 @@
       class="flex flex-col justify-center items-center pt-10 pb-10 bg-white py-6 md:rounded-t-[5rem] rounded-t-[2rem]">
       <div class="container w-10/12 mx-auto flex justify-start overflow-x-scroll services-tabs md:justify-center">
         <ul class="tabs">
-          <li data-tab-target="#home" class="active tab text-black min-w-[300px] md:min-w-[100px] w-1/5">
-            <div class="flex flex-col p-6 pt-10 space-y-6 text-center bg-brightBlue" style="height: 100%">
+          <li class="tab text-black min-w-[300px] md:min-w-[100px] w-1/5">
+            <div data-tab-target="#marc-for-sap" class="active flex flex-col p-6 pt-10 space-y-6 text-center bg-brightBlue" style="height: 100%">
               <img src="./src/assets/images/sap.png" class="w-12 h-12 place-self-center" />
               <h2 class="font-bold text-black text-sm">M.A.R.C FOR SAP</h2>
             </div>
           </li>
-          <li data-tab-target="#pricing" class="tab text-black min-w-[300px] md:min-w-[100px] w-1/5">
-            <div class="flex flex-col p-6 pt-10 space-y-6 text-center rounded-lg bg-brightBlue" style="height: 100%">
+          <li class="tab text-black min-w-[300px] md:min-w-[100px] w-1/5">
+            <div data-tab-target="#marc-for-nonsap"  class="flex flex-col p-6 pt-10 space-y-6 text-center rounded-lg bg-brightBlue" style="height: 100%">
               <img src="./src/assets/images/non-sap.png" class="w-12 h-12 place-self-center " />
               <h2 class="font-bold text-black text-sm">M.A.R.C FOR <br /> NON-SAP</h2>
             </div>
           </li>
-          <li data-tab-target="#about" class="tab text-black min-w-[300px] md:min-w-[100px] w-1/5">
-            <div class="flex flex-col p-6 pt-10 space-y-6 text-center rounded-lg bg-brightBlue" style="height: 100%">
+          <li class="tab text-black min-w-[300px] md:min-w-[100px] w-1/5">
+            <div data-tab-target="#security-implementation"  class="flex flex-col p-6 pt-10 space-y-6 text-center rounded-lg bg-brightBlue" style="height: 100%">
               <img src="./src/assets/images/security.png" class="w-12 h-12 place-self-center" />
               <h2 class="font-bold text-black text-sm">
                 SECURITY AND <br> AUTHORIZATION SCAN, <br> IMPLEMENTATION
               </h2>
             </div>
           </li>
-          <li data-tab-target="#news" class="tab text-black min-w-[300px] md:min-w-[100px] w-1/5">
-            <div class="flex flex-col p-6 pt-10 space-y-6 text-center rounded-lg bg-brightBlue" style="height: 100%">
+          <li class="tab text-black min-w-[300px] md:min-w-[100px] w-1/5">
+            <div data-tab-target="#access-control"  class="flex flex-col p-6 pt-10 space-y-6 text-center rounded-lg bg-brightBlue" style="height: 100%">
               <img src="./src/assets/images/security.png" class="w-12 h-12 place-self-center" />
               <h2 class="font-bold text-black text-sm">
                 GET ACCESS CONTROL <br> IMPLEMENTATION
               </h2>
             </div>
           </li>
-          <li data-tab-target="#news1" class="tab text-black min-w-[300px] md:min-w-[100px] w-1/5">
-            <div class="flex flex-col p-6 pt-10 space-y-6 text-center rounded-lg bg-brightBlue" style="height: 100%">
+          <li class="tab text-black min-w-[300px] md:min-w-[100px] w-1/5">
+            <div data-tab-target="#access-identity" class="flex flex-col p-6 pt-10 space-y-6 text-center rounded-lg bg-brightBlue" style="height: 100%">
               <img src="./src/assets/images/access-identity.png" class="w-12 h-12 place-self-center" />
               <h2 class="font-bold text-black text-sm">
                 ACCESS & IDENTITY <br> MANAGEMENT <br> SUPPORT SERVICES
@@ -210,60 +210,50 @@
         </ul>
       </div>
 
-      <div class="container w-10/12 mx-auto">
-        <div id="home" data-tab-content class="active">
-          <div class="bg-brightBlue text-black p-10 mt-10">
-            <h2 class="text-black">A perfect choice for supporting your:</h2>
-            <ul class="ml-6 mt-5 space-y-4 list-disc">
-              <li class="text-black">A Powerful SOD identification and reporting application for SAP systems.</li>
-              <li class="text-black">Compliance tool for SAP Control Monitoring.</li>
-              <li class="text-black ">Risk Execution Monitor: it’s a M.A.R.C risk execution detection engine which helps
-                you to identify potential business Sod <br>
-                risks executed by an SAP User.</li>
-              <li class="text-black">SAP Access, identity management services in a shared -service model which
-                facilitate effective services at low-cost mode.</li>
-            </ul>
-          </div>
+      <div class="container w-10/12 mx-auto services-tabs">
+        <div id="marc-for-sap" data-tab-content class="active bg-brightBlue text-black p-10 mt-10">
+          <h2 class="text-black">A perfect choice for supporting your:</h2>
+          <ul class="ml-6 mt-5 space-y-4 list-disc">
+            <li class="text-black">A Powerful SOD identification and reporting application for SAP systems.</li>
+            <li class="text-black">Compliance tool for SAP Control Monitoring.</li>
+            <li class="text-black ">Risk Execution Monitor: it’s a M.A.R.C risk execution detection engine which helps
+              you to identify potential business Sod <br>
+              risks executed by an SAP User.</li>
+            <li class="text-black">SAP Access, identity management services in a shared -service model which
+              facilitate effective services at low-cost mode.</li>
+          </ul>
         </div>
-        <div id="pricing" data-tab-content>
-          <div class="bg-brightBlue text-black p-10 mt-10">
-            <h2 class="text-black">We are open to customize M.A.R.C solution to adopt its capabilities to be extended to
-              any Non SAP system as well.
-            </h2>
-            <ul class="ml-6 mt-5 space-y-4 list-disc">
-              <li class="text-black">A customizable SOD identification and reporting tool for Non - SAP systems</li>
-              <li class="text-black">Customizable compliance tool for Non - SAP Control Monitoring for critical business
-                configurations</li>
+        <div id="marc-for-nonsap" data-tab-content class="bg-brightBlue text-black p-10 mt-10">
+          <h2 class="text-black">We are open to customize M.A.R.C solution to adopt its capabilities to be extended to
+            any Non SAP system as well.
+          </h2>
+          <ul class="ml-6 mt-5 space-y-4 list-disc">
+            <li class="text-black">A customizable SOD identification and reporting tool for Non - SAP systems</li>
+            <li class="text-black">Customizable compliance tool for Non - SAP Control Monitoring for critical business
+              configurations</li>
 
-            </ul>
-          </div>
+          </ul>
         </div>
-        <div id="about" data-tab-content>
-          <div class="bg-brightBlue text-black p-10 mt-10 space-y-5">
-            <h2 class="text-black">Let us help in your SAP authorization, role design implementations projects. We are
-              committed to apply the best role design practices, automation processes in role design and build phase
-              which drastically reduce the implementation time and increase accuracy.</h2>
-            <h2 class="text-black">Leveraging M.A.R.C ACM would be more handy for organization to have a SOD risk free
-              roles.</h2>
+        <div id="security-implementation" data-tab-content class="bg-brightBlue text-black p-10 mt-10 space-y-5">
+          <h2 class="text-black">Let us help in your SAP authorization, role design implementations projects. We are
+            committed to apply the best role design practices, automation processes in role design and build phase
+            which drastically reduce the implementation time and increase accuracy.</h2>
+          <h2 class="text-black">Leveraging M.A.R.C ACM would be more handy for organization to have a SOD risk free
+            roles.</h2>
 
-          </div>
         </div>
-        <div id="news" data-tab-content>
-          <div class="bg-brightBlue text-black p-10 mt-10 space-y-5">
-            <h2 class="text-black">Proven experience in designing, deploying and operating access management solutions
-              for organizations running SAP. With deep technical and business process expertise, our SAP Security and
-              GRC specialists will ensure you optimize access provisioning, whilst removing segregation of duties (SoD)
-              conflicts.</h2>
-            <h2 class="text-black">No matter what your starting point, we can help.</h2>
-          </div>
+        <div id="access-control" data-tab-content class="bg-brightBlue text-black p-10 mt-10 space-y-5">
+          <h2 class="text-black">Proven experience in designing, deploying and operating access management solutions
+            for organizations running SAP. With deep technical and business process expertise, our SAP Security and
+            GRC specialists will ensure you optimize access provisioning, whilst removing segregation of duties (SoD)
+            conflicts.</h2>
+          <h2 class="text-black">No matter what your starting point, we can help.</h2>
         </div>
-        <div id="news1" data-tab-content>
-          <div class="bg-brightBlue text-black p-10 mt-10">
+          <div id="access-identity" data-tab-content class="bg-brightBlue text-black p-10 mt-10">
             <h2 class="text-black">We have expertise and experience in managing SAP GRC governance services. As we
               follow shared service support model for GRC support services, your costs for the access, identity
               management comes down and increased efficient.</h2>
           </div>
-        </div>
       </div>
     </section>
 
@@ -284,12 +274,12 @@
 
             <ul class="flex justify-center space-x-2 md:justify-start">
               <li>
-                <a href="https://www.linkedin.com/company/marc4grc/" target="_blank"> <img class="w-6 m-auto"
-                    src="./src/assets/images/ln.svg" /></a>
+                <a href="https://www.linkedin.com/company/marc4grc/">
+                  <img class="w-6 m-auto" src="./src/assets/images/ln.svg" />
                 </a>
               </li>
               <li>
-                <a href="https://twitter.com/marc4grc" target="_blank"> <img class="w-6 m-auto"
+                <a href="https://twitter.com/marc4grc"> <img class="w-6 m-auto"
                     src="./src/assets/images/twitter1.svg" /></a>
               </li>
             </ul>
@@ -309,13 +299,13 @@
           <div class="mb-8 md:mb-0">
             <h4 class="mb-4 font-bold text-white">Services</h4>
             <ul class="space-y-2">
-              <li><a href="#">M.A.R.C for SAP</a></li>
-              <li><a href="#">M.A.R.C for Non - Sap</a></li>
+              <li><a href="./services.html">M.A.R.C for SAP</a></li>
+              <li><a href="./services.html">M.A.R.C for Non - Sap</a></li>
               <li>
-                <a href="#">Security and Authorization Scan, Implementation</a>
+                <a href="./services.html">Security and Authorization Scan, Implementation</a>
               </li>
               <li>
-                <a href="#">Access & Identity Management Support Services</a>
+                <a href="./services.html">Access & Identity Management Support Services</a>
               </li>
             </ul>
           </div>
